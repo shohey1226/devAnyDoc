@@ -56,6 +56,11 @@ googleAnalytics = ""
 	weight = 10
 
 [[menu.main]]
+	name   = "Secure connection"
+	url    = "secure-connection/"
+	weight = 15	
+
+[[menu.main]]
 	name   = "Adding content"
 	url    = "adding-content/"
 	weight = 20

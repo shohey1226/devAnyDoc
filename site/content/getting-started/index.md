@@ -1,14 +1,15 @@
 ---
 date: 2016-03-09T00:11:02+01:00
-title: devAny - Getting started
+title: Getting started
 weight: 10
 ---
 
 ## Installation on Server
 
-*<span style="color: red">This setup is <b>NOT</b> secure. Secure connection is highly recommended. Please follow [this](/secure)</span>*
+*<span style="color: red">The connection of this setup is <b>NOT</b> encrypted. Secure connection is highly recommended. Please follow [secure connection](/secure-connection/)</span>*
 
-devAny [Docker](https://docker.io) image helps to set up processes.
+
+We provide docker(\*1) image so that all processes for devAny is up and runing.
 Please install docker by following [docker installation](https://docs.docker.com/engine/installation/)
 
 After docker is installed, you just run the following command.
@@ -28,6 +29,11 @@ $ sudo docker run -d -h devany \
 -e HOME=/home/shohey1226 -e USERNAME=shohey1226 -e PASSWORD=devanyisawesome \
 -p 8888:8888 -p 3000:5000 shohey1226/devany:latest  
 ```
+
+
+*\*1. If you are not familiar with docker. Please go through [their documentation](https://docs.docker.com/).*
+
+
 
 ## Installation on Client
 

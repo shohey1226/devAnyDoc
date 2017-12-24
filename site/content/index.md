@@ -23,4 +23,4 @@ more like support remote work without PCs or educational purposes that people do
 * **Domain** -  This is not mandatoruy but TSL/SSL connection is highly recommened.
 
 
-Let's [get started](/getting-started/)
+Are you ready? Let's [get started](/getting-started/)!

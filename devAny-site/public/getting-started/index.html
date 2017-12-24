@@ -71,7 +71,7 @@
     
 
   </head>
-  <body class="palette-primary-indigo palette-accent-teal">
+  <body class="palette-primary-blue-grey palette-accent-cyan">
 
 
 
@@ -306,7 +306,40 @@
 
 			
 
-<h2 id="installation">Installation</h2>
+<h2 id="installation-on-server">Installation on Server</h2>
+
+<p><em><span style="color: red">This setup is <b>NOT</b> secure. Secure connection is highly recommended. Please follow <a href="https://devany-8.firebaseapp.com/secure">this</a></span></em></p>
+
+<p>devAny <a href="https://docker.io">Docker</a> image helps to set up processes.
+Please install docker by following <a href="https://docs.docker.com/engine/installation/">docker installation</a></p>
+
+<p>After docker is installed, you just run the following command.</p>
+
+<pre><code>$ sudo docker run -d -h devany \
+-v /home/devany:/home/&lt;USERNAME&gt;
+-e HOME=/home/&lt;USERNAME&gt; -e USERNAME=&lt;USERNAME&gt; -e PASSWORD=&lt;YOUR PASSWORD&gt; \
+-p 8888:8888 -p 3000:5000 shohey1226/devany:latest
+</code></pre>
+
+<p>Please set your <code>&lt;USERNAME&gt;</code> and <code>&lt;YOUR PASSWORD&gt;</code>.  For example,</p>
+
+<pre><code>$ sudo docker run -d -h devany \
+-v /home/devany:/home/shohey1226 \
+-e HOME=/home/shohey1226 -e USERNAME=shohey1226 -e PASSWORD=devanyisawesome \
+-p 8888:8888 -p 3000:5000 shohey1226/devany:latest  
+</code></pre>
+
+<h2 id="installation-on-client">Installation on Client</h2>
+
+<p>Download app and open the setup. Add server IP/hostname, port, username and password that you specify in server setup.</p>
+
+<p><img src="https://devany-8.firebaseapp.com/images/devAny_mobile_setup.jpg" alt="Setup" /></p>
+
+<p>Then turn your mobile to landscape, you should have development environment!</p>
+
+<p><img src="https://devany-8.firebaseapp.com/images/devAny_first_view.jpg" alt="First View" /></p>
+
+<p>OK, then we move onto how to use.</p>
 
 <h3 id="installing-hugo">Installing Hugo</h3>
 

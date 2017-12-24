@@ -18,9 +18,10 @@
       <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
       
       <guid>https://devany-8.firebaseapp.com/getting-started/</guid>
-      <description>Installation Installing Hugo Hugo itself is just a single binary without dependencies on expensive runtimes like Ruby, Python or PHP and without dependencies on any databases. You just need to download the latest version. For more information read the official installation guides.
-Let&amp;rsquo;s make sure Hugo is set up as expected. You should see a similar version number in your terminal:
-hugo version # Hugo Static Site Generator v0.15 BuildDate: 2016-01-03T12:47:47+01:00  Installing Material Next, assuming you have Hugo up and running the hugo-material-docs theme can be installed with git:</description>
+      <description>Installation on Server This setup is NOT secure. Secure connection is highly recommended. Please follow this
+devAny Docker image helps to set up processes. Please install docker by following docker installation
+After docker is installed, you just run the following command.
+$ sudo docker run -d -h devany \ -v /home/devany:/home/&amp;lt;USERNAME&amp;gt; -e HOME=/home/&amp;lt;USERNAME&amp;gt; -e USERNAME=&amp;lt;USERNAME&amp;gt; -e PASSWORD=&amp;lt;YOUR PASSWORD&amp;gt; \ -p 8888:8888 -p 3000:5000 shohey1226/devany:latest  Please set your &amp;lt;USERNAME&amp;gt; and &amp;lt;YOUR PASSWORD&amp;gt;.</description>
     </item>
     
   </channel>

@@ -35,7 +35,7 @@ $ sudo docker run -d -h devany \
 
 
 
-## Installation on Client
+## Setup on mobile
 
 Download app and open the setup. Add server IP/hostname, port, username and password that you specify in server setup.
 

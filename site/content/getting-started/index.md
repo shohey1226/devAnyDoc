@@ -6,7 +6,9 @@ weight: 10
 
 ## Installation on Server
 
-*<span style="color: red">The connection of this setup is <b>NOT</b> encrypted. Secure connection is highly recommended. Please follow [secure connection](/secure-connection/)</span>*
+![devAny Diagram](/images/devAny_diagram.jpg)
+
+*<span style="color: red">The connection of this setup is <b>NOT</b> encrypted. Secure connection is highly recommended. Please follow [secure connection](/secure-connection/) after the below instruction is completed.</span>*
 
 
 We provide docker(\*1) image so that all processes for devAny is up and runing.

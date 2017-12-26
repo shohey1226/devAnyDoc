@@ -1,49 +1,81 @@
 ---
 date: 2016-03-09T00:11:02+01:00
-title: devAny - Secure connection
+title: Secure connection
 weight: 15
 ---
 
+The connection between mobile app and server should be encrypted. Otherwise raw data is transmitted between them and there is possibility to be sneaked.
+(Please follow the below after you completed "Getting started" and confirmed that the app is working)
 
-Let's  encrypt
+![devAny Diagram secured connection](/images/devAny_diagram_secured.jpg)
 
-https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04
+There are many ways to accomplish this but I introduce a cost-saving way, which is [Let's encrypt](https://letsencrypt.org/).
+In order to do that, you need to have your own [domain](https://en.wikipedia.org/wiki/Domain_name). 
+
+As example, we use the below info to setup this.
+
+* IP address of server - 123.123.123.123
+* Hostname - secure.devany.net 
 
 
-Open 443
 
-￼
+## 1. Set up "A record" on DNS. 
 
-1.  Set up A record on DNS
+Domain Buy Service usually provide the console to configure DNS records. Go to yours and add the following.
 
-￼
+```
+secure  A    123.123.123.123
+```
 
 Confirm that you can resolve the hostname
 
+```
 $ host secure.devany.net
-secure.devany.net has address 52.68.109.243
+secure.devany.net has address 123.123.123.123
+```
 
-Installation
 
+## 2. Install applications for let's encrypt
+
+*\*OS/distro is Linux/ubuntu*
+
+```
 $ sudo add-apt-repository ppa:certbot/certbot
 $ sudo apt-get update
 $ sudo apt-get install python-certbot-nginx
+```
+
+## 3. Configure nginx
+
+Change `server_name` to your hostname.
+
+```
+$ sudo vi /etc/nginx/sites-available/default
+
+server_name secure.devany.net # change this line
+```
 
 
-Configure nginx
-$ sudo vi  /etc/nginx/sites-available/default
+Test your configuration.
 
-server_name secure.devany.net
-
-
-ubuntu@ip-172-31-18-147:~$ sudo nginx -t
+```
+ubuntu@:~$ sudo nginx -t
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
-ubuntu@ip-172-31-18-147:~$ sudo systemctl reload nginx
-ubuntu@ip-172-31-18-147:~$ 147:~$ sudo nginx -t
+```
+
+And reload the configuraion.
+
+```
+ubuntu@:~$ sudo systemctl reload nginx
+```
 
 
-ubuntu@ip-172-31-18-147:~$ sudo certbot --nginx -d secure.devany.net
+## 4. Set up certbot
+
+
+```
+ubuntu@:~$ sudo certbot --nginx -d secure.devany.net
 Saving debug log to /var/log/letsencrypt/letsencrypt.log
 Plugins selected: Authenticator nginx, Installer nginx
 Obtaining a new certificate
@@ -82,9 +114,13 @@ IMPORTANT NOTES:
 
    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le
+```
 
 
-buntu@ip-172-31-18-147:~$ sudo certbot renew --dry-run
+## 5. Test renewing the certificate and set the crontab
+
+```
+ubuntu@:~$ sudo certbot renew --dry-run
 Saving debug log to /var/log/letsencrypt/letsencrypt.log
 
 -------------------------------------------------------------------------------
@@ -119,31 +155,58 @@ IMPORTANT NOTES:
    secure backup of this folder now. This configuration directory will
    also contain certificates and private keys obtained by Certbot so
    making regular backups of this folder is ideal.
+```
 
 
-Setting for reverse proxy
+Once it's confirmed that renewal is working, set the job in cron so periodically checks the certification.
 
-https://gist.github.com/robbiet480/b1e9a2a22501b8304547
+```
+$ sudo su 
+$ crontab -e
+# add the below
+32 0 * * * certbot renew --post-hook "systemctl reload nginx" >> /tmp/certbot.log
+```
 
+## 6. Set up reverse proxy on nginx to connect to docker container
 
+Open `/etc/nginx/sites-available/default` and change it to the below.
+
+```
+$ sudo vi /etc/nginx/sites-available/default
+...
+        server_name secure.devany.net;
 
         location / {
-          proxy_pass http://localhost:8888;
+          proxy_pass http://localhost:8888/;
           proxy_redirect off;
           proxy_set_header Host $host;
           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
           proxy_set_header X-Forwarded-Ssl on;
 
-     # web socket support
-         #  https://stackoverflow.com/questions/12102110/nginx-to-reverse-proxy-websockets-and-enable-ssl-wss
-         proxy_http_version 1.1;
-         proxy_set_header Upgrade $http_upgrade;
-         proxy_set_header Connection "upgrade";
+          proxy_http_version 1.1;
+          proxy_set_header Upgrade $http_upgrade;
+          proxy_set_header Connection "upgrade";
         }
 
         location ~ /.well-known {
           allow all;
         }
+...        
+```
 
 
+then, restart nginx.
 
+```
+$ sudo systemctl restart nginx
+```
+
+
+All done!  Now you can feel safe when you use devAny:)
+
+
+### References
+
+* https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04
+* https://gist.github.com/robbiet480/b1e9a2a22501b8304547
+* https://serverfault.com/questions/790772/cron-job-for-lets-encrypt-renewal

@@ -61,14 +61,14 @@ googleAnalytics = ""
 	weight = 15	
 
 [[menu.main]]
-	name   = "Adding content"
-	url    = "adding-content/"
-	weight = 20
+	name   = "How to use"
+	url    = "how-to-use/"
+	weight = 20	
 
 [[menu.main]]
-	name   = "Roadmap"
-	url    = "roadmap/"
-	weight = 30
+	name   = "Adding content"
+	url    = "adding-content/"
+	weight = 25
 
 [[menu.main]]
 	name   = "License"

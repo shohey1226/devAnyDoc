@@ -1,7 +1,7 @@
 ---
 date: 2016-03-09T20:08:11+01:00
 title: How to use devAny
-weight: 30
+weight: 20
 ---
 
 ## Shortcuts
@@ -9,14 +9,16 @@ weight: 30
 I know programmer wants to use keyboard as often as possible. Therefore, devAny provides many shortcuts.
 You can see them on the top bar.
 
-![shortcut](/images/devAny_shortcuts.png)
+![shortcut](/images/devAny_shortcuts.png) 
 
 You can modify these shortcusts in [configuration](/configuration/)
 
 ### Common
 
 #### Move Window
-#### Full Window
+
+#### Full Windows
+
 #### Copy
 #### Paste
 

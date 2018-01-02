@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How-to-uses on devAny</title>
+    <link>https://devany-8.firebaseapp.com/how-to-use/</link>
+    <description>Recent content in How-to-uses on devAny</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>@shohey1226</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 20:08:11 +0100</lastBuildDate>
+    
+	<atom:link href="https://devany-8.firebaseapp.com/how-to-use/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to use devAny</title>
+      <link>https://devany-8.firebaseapp.com/how-to-use/</link>
+      <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
+      
+      <guid>https://devany-8.firebaseapp.com/how-to-use/</guid>
+      <description>Shortcuts I know programmer wants to use keyboard as often as possible. Therefore, devAny provides many shortcuts. You can see them on the top bar.
+You can modify these shortcusts in configuration
+Common Move Window Full Windows Copy Paste Editor Save New file Close file Terminal Browser devany command devany command is available and this command opens file or link to Editor and Browser respectively.
+Open file with Editor from Terminal  $ devany -f content/how-to-use/index.</description>
+    </item>
+    
+  </channel>
+</rss>

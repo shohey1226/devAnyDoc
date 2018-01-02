@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Secure-connections on devAny</title>
+    <link>https://devany-8.firebaseapp.com/secure-connection/</link>
+    <description>Recent content in Secure-connections on devAny</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>@shohey1226</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate>
+    
+	<atom:link href="https://devany-8.firebaseapp.com/secure-connection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Secure connection</title>
+      <link>https://devany-8.firebaseapp.com/secure-connection/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://devany-8.firebaseapp.com/secure-connection/</guid>
+      <description>The connection between mobile app and server should be encrypted. Otherwise raw data is transmitted between them and there is possibility to be sneaked. (Please follow the below after you completed &amp;ldquo;Getting started&amp;rdquo; and confirmed that the app is working)
+There are many ways to accomplish this but I introduce a cost-saving way, which is Let&amp;rsquo;s encrypt. In order to do that, you need to have your own domain.</description>
+    </item>
+    
+  </channel>
+</rss>

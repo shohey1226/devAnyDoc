@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>devAny - develop anywhere with your mobile</title>
+    <title>devAny</title>
     <link>https://devany-8.firebaseapp.com/</link>
-    <description>Recent content on devAny - develop anywhere with your mobile</description>
+    <description>Recent content on devAny</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Released under the MIT license</copyright>
-    <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate>
+    <copyright>@shohey1226</copyright>
+    <lastBuildDate>Tue, 08 Mar 2016 21:07:13 +0100</lastBuildDate>
     
 	<atom:link href="https://devany-8.firebaseapp.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>devAny - devlop Anywehre with your mobile</title>
+      <link>https://devany-8.firebaseapp.com/</link>
+      <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
+      
+      <guid>https://devany-8.firebaseapp.com/</guid>
+      <description>What is devAny? devAny is a mobile application that provides a development environment. The programer needs three things, 1) Terminal 2) Editor and 3) Browser and devAny provides them. This is not replacing current develpment envrinment like desktop or laptop but more like support remote work without PCs or educational purposes that people don&amp;rsquo;t have own PCs.
+Prerequisites  DevAny app - Install app from App Store; Server - devAny doesn&amp;rsquo;t provide Unix envrionment.</description>
+    </item>
     
     <item>
       <title>Getting started</title>
@@ -18,31 +28,53 @@
       <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
       
       <guid>https://devany-8.firebaseapp.com/getting-started/</guid>
-      <description>Installation on Server This setup is NOT secure. Secure connection is highly recommended. Please follow this
-devAny Docker image helps to set up processes. Please install docker by following docker installation
+      <description>Installation on Server The connection of this setup is NOT encrypted. Secure connection is highly recommended. Please follow secure connection after the below instruction is completed.
+We provide docker(*1) image so that all processes for devAny is up and runing. Please install docker by following docker installation
 After docker is installed, you just run the following command.
 $ sudo docker run -d -h devany \ -v /home/devany:/home/&amp;lt;USERNAME&amp;gt; -e HOME=/home/&amp;lt;USERNAME&amp;gt; -e USERNAME=&amp;lt;USERNAME&amp;gt; -e PASSWORD=&amp;lt;YOUR PASSWORD&amp;gt; \ -p 8888:8888 -p 3000:5000 shohey1226/devany:latest  Please set your &amp;lt;USERNAME&amp;gt; and &amp;lt;YOUR PASSWORD&amp;gt;.</description>
     </item>
     
     <item>
-      <title>Adding content</title>
-      <link>https://devany-8.firebaseapp.com/adding-content/</link>
-      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      <title>Secure connection</title>
+      <link>https://devany-8.firebaseapp.com/secure-connection/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
       
-      <guid>https://devany-8.firebaseapp.com/adding-content/</guid>
-      <description>Hello world Let&amp;rsquo;s create our first content file for your documentation. Open a terminal and add the following command for each new file you want to add. Replace &amp;lt;section-name&amp;gt; with a general term that describes your document in detail.
-hugo new &amp;lt;section-name&amp;gt;/filename.md  Visitors of your website will find the final document under www.example.com/&amp;lt;section-name&amp;gt;/filename/.
-Since it&amp;rsquo;s possible to have multiple content files in the same section I recommend to create at least one index.</description>
+      <guid>https://devany-8.firebaseapp.com/secure-connection/</guid>
+      <description>The connection between mobile app and server should be encrypted. Otherwise raw data is transmitted between them and there is possibility to be sneaked. (Please follow the below after you completed &amp;ldquo;Getting started&amp;rdquo; and confirmed that the app is working)
+There are many ways to accomplish this but I introduce a cost-saving way, which is Let&amp;rsquo;s encrypt. In order to do that, you need to have your own domain.</description>
     </item>
     
     <item>
-      <title>Roadmap</title>
-      <link>https://devany-8.firebaseapp.com/roadmap/</link>
+      <title>How to use devAny</title>
+      <link>https://devany-8.firebaseapp.com/how-to-use/</link>
       <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
       
-      <guid>https://devany-8.firebaseapp.com/roadmap/</guid>
-      <description>Quo vadis? The port of the original Material theme has replicated nearly all of its features. A few are still missing but I&amp;rsquo;ve good news: the Hugo community is actively working on this issues. Maybe with the next release of Hugo we can abandon this list. Stay tuned.
-Localization Currently, it is possible to collect all strings in a single place for easy customization. However, this only enables you to define all strings in a single language.</description>
+      <guid>https://devany-8.firebaseapp.com/how-to-use/</guid>
+      <description>Shortcuts I know programmer wants to use keyboard as often as possible. Therefore, devAny provides many shortcuts. You can see them on the top bar.
+You can modify these shortcusts in configuration
+Common Move Window Full Windows Copy Paste Editor Save New file Close file Terminal Browser devany command devany command is available and this command opens file or link to Editor and Browser respectively.
+Open file with Editor from Terminal  $ devany -f content/how-to-use/index.</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://devany-8.firebaseapp.com/privacy/</link>
+      <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
+      
+      <guid>https://devany-8.firebaseapp.com/privacy/</guid>
+      <description>Last updated: Jan 2, 2018
+Waza Lab built the devAny app as a Commercial app. This SERVICE is provided by Waza Lab and is intended for use as is.
+This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
+If you choose to use our Service, then you agree to the collection and use of information in relation to this policy.</description>
+    </item>
+    
+    <item>
+      <title>Terms &amp; Conditions</title>
+      <link>https://devany-8.firebaseapp.com/terms/</link>
+      <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
+      
+      <guid>https://devany-8.firebaseapp.com/terms/</guid>
+      <description>By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions.</description>
     </item>
     
     <item>
@@ -51,19 +83,8 @@ Localization Currently, it is possible to collect all strings in a single place 
       <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
       
       <guid>https://devany-8.firebaseapp.com/license/</guid>
-      <description>Copyright &amp;copy; 2016 Digitalcraftsman digitalcraftsman@protonmail.com
-Copyright &amp;copy; 2016 Martin Donath martin.donath@squidfunk.com
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</description>
-    </item>
-    
-    <item>
-      <title>devAny - Write code with your mobile</title>
-      <link>https://devany-8.firebaseapp.com/</link>
-      <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
-      
-      <guid>https://devany-8.firebaseapp.com/</guid>
-      <description>What is devAny? devAny is a mobile application that provides a development environment. The programer needs three things, 1) Terminal 2) Editor and 3) Browser and devAny provides them. This is not replacing current develpment envrinment like desktop or laptop but more like support remote work without PCs or educational purposes that people don&amp;rsquo;t have own PCs.
-Prerequisites  DevAny app - Install app from App Store; Server - devAny doesn&amp;rsquo;t provide Unix envrionment.</description>
+      <description>devAny software consists of several open source components. License terms for Pencil Code and its software components is described below.
+Ace Editor Copyright (c) 2010, Ajax.org B.V. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</description>
     </item>
     
   </channel>

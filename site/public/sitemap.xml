@@ -3,34 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://devany-8.firebaseapp.com/getting-started/</loc>
-    <lastmod>2016-03-09T00:11:02+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devany-8.firebaseapp.com/adding-content/</loc>
-    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devany-8.firebaseapp.com/roadmap/</loc>
-    <lastmod>2016-03-09T20:08:11+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devany-8.firebaseapp.com/license/</loc>
-    <lastmod>2016-03-09T20:10:46+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://devany-8.firebaseapp.com/</loc>
     <lastmod>2016-03-08T21:07:13+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://devany-8.firebaseapp.com/adding-content/</loc>
-    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://devany-8.firebaseapp.com/getting-started/</loc>
+    <lastmod>2016-03-09T00:11:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devany-8.firebaseapp.com/secure-connection/</loc>
+    <lastmod>2016-03-09T00:11:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devany-8.firebaseapp.com/how-to-use/</loc>
+    <lastmod>2016-03-09T20:08:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devany-8.firebaseapp.com/privacy/</loc>
+    <lastmod>2016-03-09T20:10:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devany-8.firebaseapp.com/terms/</loc>
+    <lastmod>2016-03-09T20:10:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devany-8.firebaseapp.com/license/</loc>
+    <lastmod>2016-03-09T20:10:46+01:00</lastmod>
   </url>
   
   <url>
@@ -45,14 +49,26 @@
   </url>
   
   <url>
+    <loc>https://devany-8.firebaseapp.com/how-to-use/</loc>
+    <lastmod>2016-03-09T20:08:11+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://devany-8.firebaseapp.com/license/</loc>
     <lastmod>2016-03-09T20:10:46+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://devany-8.firebaseapp.com/roadmap/</loc>
-    <lastmod>2016-03-09T20:08:11+01:00</lastmod>
+    <loc>https://devany-8.firebaseapp.com/privacy/</loc>
+    <lastmod>2016-03-09T20:10:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://devany-8.firebaseapp.com/secure-connection/</loc>
+    <lastmod>2016-03-09T00:11:02+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -62,8 +78,14 @@
   </url>
   
   <url>
+    <loc>https://devany-8.firebaseapp.com/terms/</loc>
+    <lastmod>2016-03-09T20:10:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://devany-8.firebaseapp.com/</loc>
-    <lastmod>2016-03-09T00:11:02+01:00</lastmod>
+    <lastmod>2016-03-08T21:07:13+01:00</lastmod>
     <priority>0</priority>
   </url>
   

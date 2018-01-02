@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Licenses on devAny - develop anywhere with your mobile</title>
+    <title>Licenses on devAny</title>
     <link>https://devany-8.firebaseapp.com/license/</link>
-    <description>Recent content in Licenses on devAny - develop anywhere with your mobile</description>
+    <description>Recent content in Licenses on devAny</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Released under the MIT license</copyright>
+    <copyright>@shohey1226</copyright>
     <lastBuildDate>Wed, 09 Mar 2016 20:10:46 +0100</lastBuildDate>
     
 	<atom:link href="https://devany-8.firebaseapp.com/license/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,8 @@
       <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
       
       <guid>https://devany-8.firebaseapp.com/license/</guid>
-      <description>Copyright &amp;copy; 2016 Digitalcraftsman digitalcraftsman@protonmail.com
-Copyright &amp;copy; 2016 Martin Donath martin.donath@squidfunk.com
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</description>
+      <description>devAny software consists of several open source components. License terms for Pencil Code and its software components is described below.
+Ace Editor Copyright (c) 2010, Ajax.org B.V. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</description>
     </item>
     
   </channel>

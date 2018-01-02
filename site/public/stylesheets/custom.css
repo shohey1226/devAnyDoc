@@ -1,0 +1,20 @@
+.article .wrapper {
+  padding: 90px 16px 92px;
+}
+
+@media only screen and (min-width: 720px) {
+  .article .wrapper {
+    padding: 100px 24px 96px;
+  }
+}
+
+.project .logo img {
+  background: #fff;
+  border-radius: 15px;
+}
+
+.copyright {
+  padding-top: 50px;
+  text-align: center;
+}
+

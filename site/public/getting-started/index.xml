@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Getting-starteds on devAny - develop anywhere with your mobile</title>
+    <title>Getting-starteds on devAny</title>
     <link>https://devany-8.firebaseapp.com/getting-started/</link>
-    <description>Recent content in Getting-starteds on devAny - develop anywhere with your mobile</description>
+    <description>Recent content in Getting-starteds on devAny</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Released under the MIT license</copyright>
+    <copyright>@shohey1226</copyright>
     <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate>
     
 	<atom:link href="https://devany-8.firebaseapp.com/getting-started/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,8 @@
       <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
       
       <guid>https://devany-8.firebaseapp.com/getting-started/</guid>
-      <description>Installation on Server This setup is NOT secure. Secure connection is highly recommended. Please follow this
-devAny Docker image helps to set up processes. Please install docker by following docker installation
+      <description>Installation on Server The connection of this setup is NOT encrypted. Secure connection is highly recommended. Please follow secure connection after the below instruction is completed.
+We provide docker(*1) image so that all processes for devAny is up and runing. Please install docker by following docker installation
 After docker is installed, you just run the following command.
 $ sudo docker run -d -h devany \ -v /home/devany:/home/&amp;lt;USERNAME&amp;gt; -e HOME=/home/&amp;lt;USERNAME&amp;gt; -e USERNAME=&amp;lt;USERNAME&amp;gt; -e PASSWORD=&amp;lt;YOUR PASSWORD&amp;gt; \ -p 8888:8888 -p 3000:5000 shohey1226/devany:latest  Please set your &amp;lt;USERNAME&amp;gt; and &amp;lt;YOUR PASSWORD&amp;gt;.</description>
     </item>

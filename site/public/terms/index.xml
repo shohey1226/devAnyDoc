@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terms on devAny</title>
+    <link>https://devany-8.firebaseapp.com/terms/</link>
+    <description>Recent content in Terms on devAny</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>@shohey1226</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 20:10:46 +0100</lastBuildDate>
+    
+	<atom:link href="https://devany-8.firebaseapp.com/terms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Terms &amp; Conditions</title>
+      <link>https://devany-8.firebaseapp.com/terms/</link>
+      <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
+      
+      <guid>https://devany-8.firebaseapp.com/terms/</guid>
+      <description>By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions.</description>
+    </item>
+    
+  </channel>
+</rss>

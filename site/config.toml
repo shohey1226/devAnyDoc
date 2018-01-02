@@ -71,10 +71,14 @@ googleAnalytics = ""
 	weight = 25
 
 [[menu.main]]
+	name   = "Terms & Conditions"
+	url    = "terms/"
+	weight = 30
+
+[[menu.main]]
 	name   = "License"
 	url    = "license/"
 	weight = 40
-
 
 [blackfriday]
 	smartypants	= true

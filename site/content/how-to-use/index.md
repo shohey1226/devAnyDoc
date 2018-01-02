@@ -9,7 +9,7 @@ weight: 30
 I know programmer wants to use keyboard as often as possible. Therefore, devAny provides many shortcuts.
 You can see them on the top bar.
 
-![shortcut]()
+![shortcut](/images/devAny_shortcuts.png)
 
 You can modify these shortcusts in [configuration](/configuration/)
 

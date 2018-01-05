@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Privacies on devAny</title>
-    <link>https://devany-8.firebaseapp.com/privacy/</link>
+    <link>https://www.devany.net/privacy/</link>
     <description>Recent content in Privacies on devAny</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>@shohey1226</copyright>
     <lastBuildDate>Wed, 09 Mar 2016 20:10:46 +0100</lastBuildDate>
     
-	<atom:link href="https://devany-8.firebaseapp.com/privacy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.devany.net/privacy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Privacy Policy</title>
-      <link>https://devany-8.firebaseapp.com/privacy/</link>
+      <link>https://www.devany.net/privacy/</link>
       <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
       
-      <guid>https://devany-8.firebaseapp.com/privacy/</guid>
+      <guid>https://www.devany.net/privacy/</guid>
       <description>Last updated: Jan 2, 2018
 Waza Lab built the devAny app as a Commercial app. This SERVICE is provided by Waza Lab and is intended for use as is.
 This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.

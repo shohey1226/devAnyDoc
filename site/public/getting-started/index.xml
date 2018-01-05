@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting-starteds on devAny</title>
-    <link>https://devany-8.firebaseapp.com/getting-started/</link>
+    <link>https://www.devany.net/getting-started/</link>
     <description>Recent content in Getting-starteds on devAny</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>@shohey1226</copyright>
     <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate>
     
-	<atom:link href="https://devany-8.firebaseapp.com/getting-started/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.devany.net/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Getting started</title>
-      <link>https://devany-8.firebaseapp.com/getting-started/</link>
+      <link>https://www.devany.net/getting-started/</link>
       <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
       
-      <guid>https://devany-8.firebaseapp.com/getting-started/</guid>
+      <guid>https://www.devany.net/getting-started/</guid>
       <description>Installation on Server The connection of this setup is NOT encrypted. Secure connection is highly recommended. Please follow secure connection after the below instruction is completed.
 We provide docker(*1) image so that all processes for devAny is up and runing. Please install docker by following docker installation
 After docker is installed, you just run the following command.

@@ -9,16 +9,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>Getting started - devAny</title>
+    <title>web browsing - devAny</title>
     <meta name="generator" content="Hugo 0.31.1" />
 
     
-    <link rel="canonical" href="https://www.devany.net/getting-started/">
+    <link rel="canonical" href="https://www.devany.net/browse/">
     
     <meta name="author" content="shohey1226">
     
 
-    <meta property="og:url" content="https://www.devany.net/getting-started/">
+    <meta property="og:url" content="https://www.devany.net/browse/">
     <meta property="og:title" content="devAny">
     <meta property="og:image" content="https://www.devany.net/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="devAny">
@@ -184,14 +184,11 @@
 
 
 
-<a class="current" title="Getting started" href="https://www.devany.net/getting-started/">
+<a  title="Getting started" href="https://www.devany.net/getting-started/">
 	
 	Getting started
 </a>
 
-
-<ul id="scrollspy">
-</ul>
 
 
   
@@ -318,48 +315,14 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>devAny - Getting started </h1>
+			<h1>devAny - web browsing </h1>
 
 			
 
-<h2 id="installation-on-server">Installation on Server</h2>
+<h3 id="open-link-from-terminal">Open link from Terminal</h3>
 
-<p><img src="https://www.devany.net/images/devAny_diagram.jpg" alt="devAny Diagram" /></p>
-
-<p><em><span style="color: red">The connection of this setup is <b>NOT</b> encrypted. Secure connection is highly recommended. Please follow <a href="https://www.devany.net/secure-connection/">secure connection</a> after the below instruction is completed.</span></em></p>
-
-<p>We provide docker(*1) image so that all processes for devAny is up and runing.
-Please install docker by following <a href="https://docs.docker.com/engine/installation/">docker installation</a></p>
-
-<p>After docker is installed, you just run the following command.</p>
-
-<pre><code>$ sudo docker run -d -h devany \
--v /home/devany:/home/&lt;USERNAME&gt;
--e HOME=/home/&lt;USERNAME&gt; -e USERNAME=&lt;USERNAME&gt; -e PASSWORD=&lt;YOUR PASSWORD&gt; \
--p 8888:8888 -p 3000:5000 shohey1226/devany:latest
+<pre><code> $ devany -l https://stackoverflow.com
 </code></pre>
-
-<p>Please set your <code>&lt;USERNAME&gt;</code> and <code>&lt;YOUR PASSWORD&gt;</code>.  For example,</p>
-
-<pre><code>$ sudo docker run -d -h devany \
--v /home/devany:/home/shohey1226 \
--e HOME=/home/shohey1226 -e USERNAME=shohey1226 -e PASSWORD=devanyisawesome \
--p 8888:8888 -p 3000:5000 shohey1226/devany:latest  
-</code></pre>
-
-<p><em>*1. If you are not familiar with docker. Please go through <a href="https://docs.docker.com/">their documentation</a>.</em></p>
-
-<h2 id="setup-on-mobile">Setup on mobile</h2>
-
-<p>Download app and open the setup. Add server IP/hostname, port, username and password that you specify in server setup.</p>
-
-<p><img src="https://www.devany.net/images/devAny_mobile_setup.jpg" alt="Setup" /></p>
-
-<p>Then turn your mobile to landscape, you should have development environment!</p>
-
-<p><img src="https://www.devany.net/images/devAny_first_view.jpg" alt="First View" /></p>
-
-<p>OK, then we move onto how to use.</p>
 
 
 			<aside class="copyright" role="note">
@@ -374,7 +337,7 @@ Please install docker by following <a href="https://docs.docker.com/engine/insta
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://www.devany.net/" title="devAny - devlop Anywehre with your mobile">
+      <a href="https://www.devany.net/how-to-use/" title="How to use devAny">
         <span class="direction">
           Previous
         </span>
@@ -384,7 +347,7 @@ Please install docker by following <a href="https://docs.docker.com/engine/insta
           </div>
           <div class="stretch">
             <div class="title">
-              devAny - devlop Anywehre with your mobile
+              How to use devAny
             </div>
           </div>
         </div>
@@ -394,14 +357,14 @@ Please install docker by following <a href="https://docs.docker.com/engine/insta
 
   <div class="next">
   
-      <a href="https://www.devany.net/secure-connection/" title="Secure connection">
+      <a href="https://www.devany.net/privacy/" title="Privacy Policy">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Secure connection
+              Privacy Policy
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">

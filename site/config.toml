@@ -1,4 +1,4 @@
-baseurl = "https://devany-8.firebaseapp.com/"
+baseurl = "https://www.devany.net/"
 languageCode = "en"
 title = "devAny"
 theme = "hugo-material-docs"

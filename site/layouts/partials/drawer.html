@@ -1,20 +1,18 @@
 <nav aria-label="Navigation">
-  <a href="{{ with .Site.Params.repo_url }}{{ . }}{{ else }}{{ .Site.BaseURL }}{{ end }}" class="project">
+  <a class="project">
     <div class="banner">
       {{ with .Site.Params.logo }}
         <div class="logo">
           <img src="{{ $.Site.BaseURL }}{{ . }}">
         </div>
       {{ end }}
-      <div class="name">
-        <strong>{{ .Site.Title }} {{ with .Site.Params.version }}<span class="version">{{ . }}</span>{{ end }}</strong>
-        {{ with .Scratch.Get "repo_id" }}
-          <br>
-          {{ . }}
-        {{ end }}
-      </div>
     </div>
   </a>
+
+  <div style="padding-left: 20px;">
+    <a href="https://itunes.apple.com/app/id1315254200" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-sm.svg) no-repeat;width:60px;height:15px;background-size:contain;"></a>
+  </div>
+
 
   <div class="scrollable">
     <div class="wrapper">

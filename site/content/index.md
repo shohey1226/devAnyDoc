@@ -1,6 +1,6 @@
 ---
 date: 2016-03-08T21:07:13+01:00
-title: devAny - devlop Anywehre with your mobile
+title: devAny - develop Anywhere with your mobile
 type: index
 weight: 1
 ---
@@ -10,17 +10,17 @@ weight: 1
 ## What is devAny?
 
 **devAny** is a mobile application that provides a development environment.
-The programer needs three things, 1) Terminal 2) Editor and 3) Browser 
-and devAny provides them. This is not replacing current develpment envrinment like desktop or laptop but
+The programmer needs three things, 1) Terminal 2) Editor and 3) Browser 
+and devAny provides them. This is not replacing current development environment like desktop or laptop but
 more like support remote work without PCs or educational purposes that people don't have own PCs.
 
 ## Prerequisites
 
-* **DevAny app** - Install app from [App Store](https://xxx);
-* **Server** -  devAny doesn't provide Unix envrionment. You need to have a server for devaAny to connect.
-* **Bluetooth Keyboard** -  We all konow that virtual keyboard is hard to type. Find your favorite keyboard.
+* **devAny app** - [Only iOS available] Install app from [iTunes App Store](https://itunes.apple.com/app/id1315254200);
+* **Server** -  devAny doesn't provide Unix environment. You need to have a server for devaAny to connect.
+* **Bluetooth Keyboard** -  We all know that virtual keyboard is hard to type. Find your favorite keyboard.
 * **The way to connect to monitor** - physical cable or AirPlay
-* **Domain** -  This is not mandatoruy but TSL/SSL connection is highly recommened.
+* **Domain** -  This is not mandatory but TSL/SSL connection is highly recommended.
 
 
 Are you ready? Let's [get started](/getting-started/)!

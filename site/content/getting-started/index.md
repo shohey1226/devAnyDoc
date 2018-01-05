@@ -39,7 +39,7 @@ $ sudo docker run -d -h devany \
 
 ## Setup on mobile
 
-Download app and open the setup. Add server IP/hostname, port, username and password that you specify in server setup.
+Download app from [iTunes App Store](http://itunes.apple.com/app/id1315254200) and open the setup(portrait view). Add server IP/hostname, port, username and password that you specify in server setup.
 
 ![Setup](/images/devAny_mobile_setup.jpg)
 
@@ -49,6 +49,6 @@ Then turn your mobile to landscape, you should have development environment!
 ![First View](/images/devAny_first_view.jpg)
 
 
-OK, then we move onto how to use.
+OK, then we move onto [how to use](/how-to-use/).
 
 

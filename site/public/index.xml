@@ -22,5 +22,78 @@
 Prerequisites  devAny app - [Only iOS available] Install app from iTunes App Store; Server - devAny doesn&amp;rsquo;t provide Unix environment.</description>
     </item>
     
+    <item>
+      <title>Getting started</title>
+      <link>https://www.devany.net/getting-started/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://www.devany.net/getting-started/</guid>
+      <description>Installation on Server The connection of this setup is NOT encrypted. Secure connection is highly recommended. Please follow secure connection after the below instruction is completed.
+We provide docker(*1) image so that all processes for devAny is up and runing. Please install docker by following docker installation
+After docker is installed, you just run the following command.
+$ sudo docker run -d -h devany \ -v /home/devany:/home/&amp;lt;USERNAME&amp;gt; -e HOME=/home/&amp;lt;USERNAME&amp;gt; -e USERNAME=&amp;lt;USERNAME&amp;gt; -e PASSWORD=&amp;lt;YOUR PASSWORD&amp;gt; \ -p 8888:8888 -p 3000:5000 shohey1226/devany:latest  Please set your &amp;lt;USERNAME&amp;gt; and &amp;lt;YOUR PASSWORD&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Secure connection</title>
+      <link>https://www.devany.net/secure-connection/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://www.devany.net/secure-connection/</guid>
+      <description>The connection between mobile app and server should be encrypted. Otherwise raw data is transmitted between them and there is possibility to be sneaked. (Please follow the below after you completed &amp;ldquo;Getting started&amp;rdquo; and confirmed that the app is working)
+There are many ways to accomplish this but I introduce a cost-saving way, which is Let&amp;rsquo;s encrypt. In order to do that, you need to have your own domain.</description>
+    </item>
+    
+    <item>
+      <title>How to use devAny</title>
+      <link>https://www.devany.net/how-to-use/</link>
+      <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
+      
+      <guid>https://www.devany.net/how-to-use/</guid>
+      <description>devany command devany command is available and this command opens file or link to Editor and Browser respectively.
+Open file with Editor from Terminal  $ devany -f content/how-to-use/index.md  Open link with Browser from Terminal  $ devany -l https://www.google.com  Shortcuts I know programmer wants to use keyboard as often as possible. Therefore, devAny provides many shortcuts. You can see them on the top bar.
+You can modify these shortcusts in configuration</description>
+    </item>
+    
+    <item>
+      <title>web browsing</title>
+      <link>https://www.devany.net/browse/</link>
+      <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
+      
+      <guid>https://www.devany.net/browse/</guid>
+      <description> Open link from Terminal  $ devany -l https://stackoverflow.com  Links  Google Stackoverflow Github Slack Linuxbrew rbenv  </description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://www.devany.net/privacy/</link>
+      <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
+      
+      <guid>https://www.devany.net/privacy/</guid>
+      <description>Last updated: Jan 2, 2018
+Waza Lab built the devAny app as a Commercial app. This SERVICE is provided by Waza Lab and is intended for use as is.
+This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
+If you choose to use our Service, then you agree to the collection and use of information in relation to this policy.</description>
+    </item>
+    
+    <item>
+      <title>Terms &amp; Conditions</title>
+      <link>https://www.devany.net/terms/</link>
+      <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
+      
+      <guid>https://www.devany.net/terms/</guid>
+      <description>By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions.</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>https://www.devany.net/license/</link>
+      <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
+      
+      <guid>https://www.devany.net/license/</guid>
+      <description>devAny software consists of several open source components. License terms for Pencil Code and its software components is described below.
+Ace Editor Copyright (c) 2010, Ajax.org B.V. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</description>
+    </item>
+    
   </channel>
 </rss>

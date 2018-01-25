@@ -7,6 +7,14 @@
     padding: 100px 24px 96px;
   }
 }
+.header .stretch .title {
+  color: #9cde29;
+  font-family: HelveticaNeue-CondensedBold, Roboto;
+}
+
+.backdrop {
+  background-color: #fafafa;
+}
 
 .project .logo img {
   background: #fff;
@@ -18,3 +26,45 @@
   text-align: center;
 }
 
+.drawer {
+  font-size: 18px;
+}
+
+.article {
+  font-size: 18px;
+}
+
+.article h1 {
+  font-size: 32px;
+}
+
+.article h2 {
+  font-size: 28px;
+}
+
+.article h3 {
+  font-size: 20px;
+}
+
+.article h4 {
+  font-size: 20px;
+}
+
+pre,
+pre code {
+  background-color: #333;
+}
+
+.article pre code {
+  color: white !important;
+}
+
+.article code {
+  background: #333;
+  font-size: 16px;
+  color: white;
+}
+
+.drawer .scrollable {
+  top: 0;
+}

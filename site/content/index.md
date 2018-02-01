@@ -1,6 +1,6 @@
 ---
 date: 2016-03-08T21:07:13+01:00
-title: devAny - develop Anywhere with your mobile
+title: devAny - Coding with editor, terminal and browser on iPhone/iPad
 type: index
 weight: 1
 ---
@@ -8,6 +8,12 @@ weight: 1
 ![Material Screenshot](/images/devAny_top_image.jpg)
 
 ## What is devAny?
+
+* Coding with iOS device
+* Free to choose your backend
+* Mondatory tools (Terminal, Browser and Editor)
+* Operate with only keybaord
+
 
 **devAny** is a mobile application that provides a development environment.
 The programmer needs three things, 1) Terminal 2) Editor and 3) Browser 

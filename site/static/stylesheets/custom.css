@@ -36,18 +36,22 @@
 
 .article h1 {
   font-size: 32px;
+  font-weight: 600;
 }
 
 .article h2 {
   font-size: 28px;
+  font-weight: 600;  
 }
 
 .article h3 {
   font-size: 20px;
+  font-weight: 600;  
 }
 
 .article h4 {
   font-size: 20px;
+  font-weight: 600;  
 }
 
 pre,

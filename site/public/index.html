@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>devAny</title>
+    <title>devAny - Coding with editor, terminal and browser on iPhone/iPad - devAny</title>
     <meta name="generator" content="Hugo 0.34" />
 
     
@@ -68,9 +68,6 @@
     
     <script src="https://www.devany.net/javascripts/modernizr.js"></script>
 
-    
-    <link href="https://www.devany.net/index.xml" rel="alternate" type="application/rss+xml" title="devAny" />
-    <link href="https://www.devany.net/index.xml" rel="feed" type="application/rss+xml" title="devAny" />
     
 
   </head>
@@ -155,7 +152,7 @@
 
 
 
-<a class="current" title="Home" href="https://www.devany.net/">
+<a class="current" title="Home" href="./">
 	
 	Home
 </a>
@@ -176,7 +173,7 @@
 
 
 
-<a  title="Getting started" href="https://www.devany.net/getting-started/">
+<a  title="Getting started" href="./getting-started/">
 	
 	Getting started
 </a>
@@ -194,7 +191,7 @@
 
 
 
-<a  title="Secure connection" href="https://www.devany.net/secure-connection/">
+<a  title="Secure connection" href="./secure-connection/">
 	
 	Secure connection
 </a>
@@ -212,7 +209,7 @@
 
 
 
-<a  title="How to use" href="https://www.devany.net/how-to-use/">
+<a  title="How to use" href="./how-to-use/">
 	
 	How to use
 </a>
@@ -230,7 +227,7 @@
 
 
 
-<a  title="Privacy" href="https://www.devany.net/privacy/">
+<a  title="Privacy" href="./privacy/">
 	
 	Privacy
 </a>
@@ -248,7 +245,7 @@
 
 
 
-<a  title="Terms &amp; Conditions" href="https://www.devany.net/terms/">
+<a  title="Terms &amp; Conditions" href="./terms/">
 	
 	Terms &amp; Conditions
 </a>
@@ -266,7 +263,7 @@
 
 
 
-<a  title="License" href="https://www.devany.net/license/">
+<a  title="License" href="./license/">
 	
 	License
 </a>
@@ -307,12 +304,11 @@
 
 	<article class="article">
 		<div class="wrapper">
+			<h1>devAny - devAny - Coding with editor, terminal and browser on iPhone/iPad </h1>
+
 			
-				<h1>devAny - Coding with editor, terminal and browser on iPhone/iPad </h1>
 
-				
-
-<p><img src="https://www.devany.net/images/devAny_top_image.jpg" alt="Material Screenshot" /></p>
+<p><img src="./images/devAny_top_image.jpg" alt="Material Screenshot" /></p>
 
 <h2 id="what-is-devany">What is devAny?</h2>
 
@@ -338,13 +334,12 @@ more like support remote work without PCs or educational purposes that people do
 <li><strong>Domain</strong> -  This is not mandatory but TSL/SSL connection is highly recommended.</li>
 </ul>
 
-<p>Are you ready? Let&rsquo;s <a href="https://www.devany.net/getting-started/">get started</a>!</p>
+<p>Are you ready? Let&rsquo;s <a href="./getting-started/">get started</a>!</p>
 
-			
 
 			<aside class="copyright" role="note">
 				
-				&copy; 2018 @shohey1226 
+				&copy; 2018 @shohey1226
 				
 			</aside>
 
@@ -352,31 +347,6 @@ more like support remote work without PCs or educational purposes that people do
 				
 
 
-
-<nav class="pagination" aria-label="Footer">
-  <div class="previous">
-  </div>
-
-  
-  
-  <div class="next">
-      <a href="https://www.devany.net/" title="devAny">
-        <span class="direction">
-          Next
-        </span>
-        <div class="page">
-          <div class="stretch">
-            <div class="title">
-              devAny
-            </div>
-          </div>
-          <div class="button button-next" role="button" aria-label="Next">
-            <i class="icon icon-forward"></i>
-          </div>
-        </div>
-      </a>
-  </div>
-</nav>
 
 
 
@@ -425,6 +395,31 @@ more like support remote work without PCs or educational purposes that people do
           }
         } else {
           scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
+entElement.removeChild(scrollspy)
         }
 
 

@@ -22,8 +22,9 @@ devAny has thefollowing feature.
 
 * **devAny app** - [Only iOS available] Install app from [iTunes App Store](https://itunes.apple.com/app/id1315254200);
 * **Server** -  devAny doesn't provide Unix environment. You need to have a server for devaAny to connect. No worries, we have docker image so you can install instantly.
-* **Bluetooth Keyboard** -  We all know that virtual keyboard is hard to type. Find your favorite keyboard.
+* **Bluetooth Keyboard** -  The virtual keyboard is hard to type. Find your favorite keyboard.
 * **The way to connect to monitor** - physical cable or AirPlay
 * **Domain** -  This is not mandatory but TSL/SSL connection is highly recommended.
 
 Are you ready? Let's [get started](/getting-started/)!
+

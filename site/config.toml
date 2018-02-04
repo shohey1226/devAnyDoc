@@ -57,7 +57,7 @@ googleAnalytics = ""
 	weight = 5
 
 [[menu.main]]
-	name   = "How to use"
+	name   = "How to use devAny"
 	url    = "how-to-use/"
 	weight = 10		
 

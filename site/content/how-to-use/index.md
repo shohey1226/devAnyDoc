@@ -1,53 +1,42 @@
 ---
 date: 2016-03-09T20:08:11+01:00
-title: How to use devAny
-weight: 20
+title: How to use devAny 
+weight: 10
 ---
 
 
-## devany command 
+## Desktop 
 
-`devany` command is available and this command opens file or link to Editor and Browser respectively.
+Desktop view has terminal, editor and browser. This can be seen by making your device horizontal.
+The below shortcuts is always available in Desktop.
 
-### Open file with Editor from Terminal
+### Move Window : `Cmd+Tab`
 
-```
- $ devany -f content/how-to-use/index.md
-```
-
-### Open link with Browser from Terminal
-
-```
- $ devany -l https://www.google.com
-```
-
-
-## Shortcuts
-
-I know programmer wants to use keyboard as often as possible. Therefore, devAny provides many shortcuts.
-You can see them on the top bar.
-
-![shortcut](/images/devAny_shortcuts.png) 
-
-You can modify these shortcusts in [configuration](/configuration/)
-
-### Common
-
-#### Move Window : `Alt+Tab`
-
+You can see green line on the edge. The window which has green line is the active window. 
+You can change the active window with this shortcut.
+(Also you can tap on device to make active)
 <video src="/movies/move_windows.mp4" controls width="100%"></video>
 
-#### Full Windows : `Alt+Shift+?`
+---
+
+### Full screen : `Cmd+Shift+?`
+
+You can make Editor/Terminal/Browser fullscreen.
 
 <video src="/movies/full_window.mp4" controls width="100%"></video>
 
-### Editor
-#### Copy : Alt+c
-#### Paste Alt+v
-#### Save : Alt+s
-#### New file : Alt+n
-#### Close file : Alt+q
+---
 
-### Terminal
-### Browser
+### Help : `Alt+1`
+
+## Setting 
+
+Setting view is to set up for devAny.  This can be seen by making your device vertical(portrait).
+
+### Hostname
+### Port
+### Secured on/off
+### Font size
+### Browser resolution
+### Keyboard shortcuts
 

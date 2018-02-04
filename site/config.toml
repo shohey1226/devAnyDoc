@@ -54,27 +54,37 @@ googleAnalytics = ""
 [[menu.main]]
 	name   = "Getting started"
 	url    = "getting-started/"
-	weight = 10
-
-[[menu.main]]
-	name   = "Secure connection"
-	url    = "secure-connection/"
-	weight = 15	
+	weight = 5
 
 [[menu.main]]
 	name   = "How to use"
 	url    = "how-to-use/"
+	weight = 10		
+
+[[menu.main]]
+	name   = "How to use terminal"
+	url    = "how-to-use-terminal/"
+	weight = 15	
+
+[[menu.main]]
+	name   = "How to use editor"
+	url    = "how-to-use-editor/"
 	weight = 20	
+
+[[menu.main]]
+	name   = "How to use browser"
+	url    = "how-to-use-browser/"
+	weight = 25
 
 [[menu.main]]
 	name   = "Privacy"
 	url    = "privacy/"
-	weight = 25
+	weight = 30
 
 [[menu.main]]
 	name   = "Terms & Conditions"
 	url    = "terms/"
-	weight = 30
+	weight = 35
 
 [[menu.main]]
 	name   = "License"

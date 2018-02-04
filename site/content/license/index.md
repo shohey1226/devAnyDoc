@@ -4,9 +4,9 @@ title: License
 weight: 40
 ---
 
-devAny software consists of several open source components. License terms for Pencil Code and its software components is described below.
+devAny software consists of several open source components. 
 
-## Ace Editor
+### Ace Editor
 
 ``` txt
 Copyright (c) 2010, Ajax.org B.V.
@@ -35,7 +35,7 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
-## Xterm JS
+### Xterm JS
 
 ``` txt
 Copyright (c) 2014-2016, SourceLair Private Company (https://www.sourcelair.com)

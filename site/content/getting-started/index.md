@@ -69,13 +69,13 @@ As example, we use the below info to setup this.
 
 Domain Buy Service usually provide the console to configure DNS records. Go to yours and add the following.
 
-```
+```txt
 secure  A    123.123.123.123
 ```
 
 Confirm that you can resolve the hostname
 
-```
+```bash
 $ host secure.devany.net
 secure.devany.net has address 123.123.123.123
 ```
@@ -85,7 +85,7 @@ secure.devany.net has address 123.123.123.123
 
 *\*OS/distro is Linux/ubuntu*
 
-```
+```bash
 $ sudo add-apt-repository ppa:certbot/certbot
 $ sudo apt-get update
 $ sudo apt-get install python-certbot-nginx
@@ -95,7 +95,7 @@ $ sudo apt-get install python-certbot-nginx
 
 Change `server_name` to your hostname.
 
-```
+```bash
 $ sudo vi /etc/nginx/sites-available/default
 
 server_name secure.devany.net # change this line
@@ -104,7 +104,7 @@ server_name secure.devany.net # change this line
 
 Test your configuration.
 
-```
+```shell
 ubuntu@:~$ sudo nginx -t
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
@@ -120,7 +120,7 @@ ubuntu@:~$ sudo systemctl reload nginx
 ### 4. Set up certbot
 
 
-```
+```bash
 ubuntu@:~$ sudo certbot --nginx -d secure.devany.net
 Saving debug log to /var/log/letsencrypt/letsencrypt.log
 Plugins selected: Authenticator nginx, Installer nginx
@@ -165,7 +165,7 @@ IMPORTANT NOTES:
 
 ### 5. Test renewing the certificate and set the crontab
 
-```
+```bash
 ubuntu@:~$ sudo certbot renew --dry-run
 Saving debug log to /var/log/letsencrypt/letsencrypt.log
 
@@ -206,7 +206,7 @@ IMPORTANT NOTES:
 
 Once it's confirmed that renewal is working, set the job in cron so periodically checks the certification.
 
-```
+```bash
 $ sudo su 
 $ crontab -e
 # add the below
@@ -217,7 +217,7 @@ $ crontab -e
 
 Open `/etc/nginx/sites-available/default` and change it to the below.
 
-```
+```bash
 $ sudo vi /etc/nginx/sites-available/default
 ...
         server_name secure.devany.net;
@@ -243,7 +243,7 @@ $ sudo vi /etc/nginx/sites-available/default
 
 then, restart nginx.
 
-```
+```bash
 $ sudo systemctl restart nginx
 ```
 

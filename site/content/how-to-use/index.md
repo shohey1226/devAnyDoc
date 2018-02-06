@@ -1,13 +1,13 @@
 ---
 date: 2016-03-09T20:08:11+01:00
-title: How to use devAny   
-weight: 10
+title: How to use devAny  
+weight: 15
 ---
 
 
 ## Desktop 
 
-Desktop view has terminal, editor and browser. This can be seen by making your device horizontal.
+Desktop view has terminal, editor and browser. This can be seen by making your device horizontal(landscape).
 The below shortcuts is always available in Desktop.
 
 ### Move Window : `Cmd+Tab`

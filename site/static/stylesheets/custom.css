@@ -12,10 +12,10 @@
   font-family: HelveticaNeue-CondensedBold, Roboto;
 }
 
-.backdrop {
+/*.backdrop {
   background-color: #fafafa;
 }
-
+*/
 .project .logo img {
   background: #fff;
   border-radius: 15px;
@@ -41,17 +41,17 @@
 
 .article h2 {
   font-size: 28px;
-  font-weight: 600;  
+  font-weight: 600;
 }
 
 .article h3 {
-  font-size: 20px;
-  font-weight: 600;  
+  font-size: 19px;
+  font-weight: 600;
 }
 
 .article h4 {
   font-size: 20px;
-  font-weight: 600;  
+  font-weight: 600;
 }
 
 pre,
@@ -65,10 +65,28 @@ pre code {
 
 .article code {
   background: #333;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
 }
 
 .drawer .scrollable {
   top: 0;
+}
+
+.palette-primary-white .article table th {
+  background: #333333;
+}
+
+.article table {
+  font-size: 18px;
+}
+
+.article table th {
+  font-size: 18px;
+  color: #9cde29;
+}
+
+@media only screen and (min-width: 720px) {
+.article .data table {
+    float: left;
 }

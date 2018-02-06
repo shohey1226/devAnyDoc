@@ -4,7 +4,7 @@ title: How to use terminal
 weight: 10
 ---
 
-Terminal is a terminal session to connect to server. You can use [screen](https://www.gnu.org/software/screen/)/[tmux](https://github.com/tmux/tmux/wiki) to keep sessions in the background.
+Terminal is a terminal session to connect to server. You can use [screen](https://www.gnu.org/software/screen/)/[tmux](https://github.com/tmux/tmux/wiki) to keep sessions in the background because when devAny app is inacitve(open the other app, for example), it cuts the sesesson.
 
 ## devany command 
 
@@ -12,16 +12,28 @@ Terminal is a terminal session to connect to server. You can use [screen](https:
 
 ### Open file with Editor from Terminal
 
-```
+```bash
  $ devany -f content/how-to-use/index.md
 ```
 
+---
+
 ### Open link with Browser from Terminal
 
-```
- $ devany -l https://www.google.com
+```bash
+ $ devany -l https://www.google.com 
 ```
 
-## Find 
-## Copy 
-## Paste
+---
+
+## How to copy text
+
+## Shortcuts
+
+| Keyboard Command   | Description 
+| --- | --- 
+| Command + f  | Search a word
+| Command + c | Copy
+| Command + v | Paste  
+| Command + r | Reload _*Try when Terminal is hung_
+

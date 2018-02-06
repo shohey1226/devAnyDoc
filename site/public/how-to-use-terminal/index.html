@@ -9,16 +9,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>devAny - Coding with editor, terminal and browser on iPhone/iPad</title>
+    <title>How to use terminal - devAny</title>
     <meta name="generator" content="Hugo 0.34" />
 
     
-    <link rel="canonical" href="https://www.devany.net/">
+    <link rel="canonical" href="https://www.devany.net/how-to-use-terminal/">
     
     <meta name="author" content="shohey1226">
     
 
-    <meta property="og:url" content="https://www.devany.net/">
+    <meta property="og:url" content="https://www.devany.net/how-to-use-terminal/">
     <meta property="og:title" content="devAny">
     <meta property="og:image" content="https://www.devany.net/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="devAny">
@@ -68,9 +68,6 @@
     
     <script src="https://www.devany.net/javascripts/modernizr.js"></script>
 
-    
-    <link href="https://www.devany.net/index.xml" rel="alternate" type="application/rss+xml" title="devAny" />
-    <link href="https://www.devany.net/index.xml" rel="feed" type="application/rss+xml" title="devAny" />
     
 
   </head>
@@ -155,14 +152,11 @@
 
 
 
-<a class="current" title="Home" href="https://www.devany.net/">
+<a  title="Home" href="https://www.devany.net/">
 	
 	Home
 </a>
 
-
-<ul id="scrollspy">
-</ul>
 
 
   
@@ -212,11 +206,14 @@
 
 
 
-<a  title="How to use terminal" href="https://www.devany.net/how-to-use-terminal/">
+<a class="current" title="How to use terminal" href="https://www.devany.net/how-to-use-terminal/">
 	
 	How to use terminal
 </a>
 
+
+<ul id="scrollspy">
+</ul>
 
 
   
@@ -361,66 +358,106 @@
 
 	<article class="article">
 		<div class="wrapper">
-			
-				<h1>devAny - Coding with editor, terminal and browser on iPhone/iPad </h1>
-
-				
-
-<p><img src="https://www.devany.net/images/devAny_top_image.jpg" alt="Material Screenshot" /></p>
-
-<h2 id="what-is-devany">What is devAny?</h2>
-
-<p>Have you ever thought that you want to write a code with your mobile?
-Because your iPhone/iPad is getting better and better, now it&rsquo;s possible with <strong>devAny</strong> app.</p>
-
-<p>devAny has thefollowing feature.</p>
-
-<ul>
-<li>Editor to sync with your backend Unix server</li>
-<li>Terminal that control your backend Unix server</li>
-<li>Browser which can be controlled by only keyboard</li>
-</ul>
-
-<h2 id="prerequisites">Prerequisites</h2>
-
-<ul>
-<li><strong>devAny app</strong> - [Only iOS available] Install app from <a href="https://itunes.apple.com/app/id1315254200">iTunes App Store</a>;</li>
-<li><strong>Server</strong> -  devAny doesn&rsquo;t provide Unix environment. You need to have a server for devaAny to connect. No worries, we have docker image so you can install instantly.</li>
-<li><strong>Bluetooth Keyboard</strong> -  The virtual keyboard is hard to type. Find your favorite keyboard.</li>
-<li><strong>The way to connect to monitor</strong> - physical cable or AirPlay</li>
-<li><strong>Domain</strong> -  This is not mandatory but TSL/SSL connection is highly recommended.</li>
-</ul>
-
-<p>Are you ready? Let&rsquo;s <a href="https://www.devany.net/getting-started/">get started</a>!</p>
+			<h1>devAny - How to use terminal </h1>
 
 			
+
+<p>Terminal is a terminal session to connect to server. You can use <a href="https://www.gnu.org/software/screen/">screen</a>/<a href="https://github.com/tmux/tmux/wiki">tmux</a> to keep sessions in the background because when devAny app is inacitve(open the other app, for example), it cuts the sesesson.</p>
+
+<h2 id="devany-command">devany command</h2>
+
+<p><code>devany</code> command is available and this command opens file or link to Editor and Browser respectively.</p>
+
+<h3 id="open-file-with-editor-from-terminal">Open file with Editor from Terminal</h3>
+
+<pre><code class="language-bash"> $ devany -f content/how-to-use/index.md
+</code></pre>
+
+<hr />
+
+<h3 id="open-link-with-browser-from-terminal">Open link with Browser from Terminal</h3>
+
+<pre><code class="language-bash"> $ devany -l https://www.google.com 
+</code></pre>
+
+<hr />
+
+<h2 id="how-to-copy-text">How to copy text</h2>
+
+<h2 id="shortcuts">Shortcuts</h2>
+
+<table>
+<thead>
+<tr>
+<th>Keyboard Command</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Command + f</td>
+<td>Search a word</td>
+</tr>
+
+<tr>
+<td>Command + c</td>
+<td>Copy</td>
+</tr>
+
+<tr>
+<td>Command + v</td>
+<td>Paste</td>
+</tr>
+
+<tr>
+<td>Command + r</td>
+<td>Reload <em>*Try when Terminal is hung</em></td>
+</tr>
+</tbody>
+</table>
+
 
 			<aside class="copyright" role="note">
 				
-				&copy; 2018 @shohey1226 
+				&copy; 2018 @shohey1226
 				
 			</aside>
 
 			<footer class="footer">
 				
 
-
-
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
+  
+      <a href="https://www.devany.net/getting-started/" title="Getting started">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Getting started
+            </div>
+          </div>
+        </div>
+      </a>
+  
   </div>
 
-  
-  
   <div class="next">
-      <a href="https://www.devany.net/getting-started/" title="Getting started">
+  
+      <a href="https://www.devany.net/how-to-use/" title="How to use devAny">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Getting started
+              How to use devAny
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
@@ -428,8 +465,11 @@ Because your iPhone/iPad is getting better and better, now it&rsquo;s possible w
           </div>
         </div>
       </a>
+  
   </div>
 </nav>
+
+
 
 
 

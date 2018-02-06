@@ -4,9 +4,9 @@ title: FAQ
 weight: 30
 ---
 
-## My terminal is always blank and not responding?
+### Q. My terminal is always blank and not responding?
 
-You need to set up your server. Please go through [getting started](/getting-started/).
+A. You need to set up your server. Please go through [getting started](/getting-started/).
 
 
 

@@ -18,9 +18,9 @@
       <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
       
       <guid>https://www.devany.net/how-to-use/</guid>
-      <description>devany command devany command is available and this command opens file or link to Editor and Browser respectively.
-Open file with Editor from Terminal  $ devany -f content/how-to-use/index.md  Open link with Browser from Terminal  $ devany -l https://www.google.com  Shortcuts I know programmer wants to use keyboard as often as possible. Therefore, devAny provides many shortcuts. You can see them on the top bar.
-You can modify these shortcusts in configuration</description>
+      <description>Desktop Desktop view has terminal, editor and browser. This can be seen by making your device horizontal(landscape). The below shortcuts is always available in Desktop.
+Move Window : Cmd+Tab You can see green line on the edge. The window which has green line is the active window. You can change the active window with this shortcut. (Also you can tap on device to make active) 
+Full screen : Cmd+Shift+?</description>
     </item>
     
   </channel>

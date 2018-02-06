@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How-to-use-browsers on devAny</title>
+    <link>https://www.devany.net/how-to-use-browser/</link>
+    <description>Recent content in How-to-use-browsers on devAny</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>@shohey1226</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 20:08:11 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.devany.net/how-to-use-browser/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to use browser</title>
+      <link>https://www.devany.net/how-to-use-browser/</link>
+      <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
+      
+      <guid>https://www.devany.net/how-to-use-browser/</guid>
+      <description> Browser is for browsing websites. You can operate with only your keyboard.
+Apple doesn&amp;rsquo;t allow us to go insecure website(http) and only allow secure(SSL/TSL) enabled websites. devAny tries to get insecure websites through server but it doesn&amp;rsquo;t work 100%.
+Shortcuts    Keyboard Command Description     Command + i Open links   Command + c Copy   Command + v Paste   Command + r Reload   Control + p Scroll up   Control + n Scroll down   Command + [ Go back   Command + ] Go forward    </description>
+    </item>
+    
+  </channel>
+</rss>

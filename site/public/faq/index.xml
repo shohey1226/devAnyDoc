@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Faqs on devAny</title>
+    <link>https://www.devany.net/faq/</link>
+    <description>Recent content in Faqs on devAny</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>@shohey1226</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 20:08:11 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.devany.net/faq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://www.devany.net/faq/</link>
+      <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
+      
+      <guid>https://www.devany.net/faq/</guid>
+      <description>My terminal is always blank and not responding? You need to set up your server. Please go through getting started.</description>
+    </item>
+    
+  </channel>
+</rss>

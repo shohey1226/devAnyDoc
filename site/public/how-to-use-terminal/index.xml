@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How-to-use-terminals on devAny</title>
+    <link>https://www.devany.net/how-to-use-terminal/</link>
+    <description>Recent content in How-to-use-terminals on devAny</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>@shohey1226</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.devany.net/how-to-use-terminal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to use terminal</title>
+      <link>https://www.devany.net/how-to-use-terminal/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://www.devany.net/how-to-use-terminal/</guid>
+      <description>Terminal is a terminal session to connect to server. You can use screen/tmux to keep sessions in the background because when devAny app is inacitve(open the other app, for example), it cuts the sesesson.
+devany command devany command is available and this command opens file or link to Editor and Browser respectively.
+Open file with Editor from Terminal $ devany -f content/how-to-use/index.md  Open link with Browser from Terminal $ devany -l https://www.</description>
+    </item>
+    
+  </channel>
+</rss>

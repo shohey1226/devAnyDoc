@@ -8,11 +8,16 @@ Browser is for browsing websites. You can operate with only your keyboard.
 
 *<span style="color: red">Apple doesn't allow us to go insecure website(http) and only allow secure(SSL/TSL) enabled websites. devAny tries to get insecure websites through server but it doesn't work 100%.</span>*
 
-## Link hints : `Cmd+i`
-## Scroll up: `Control+p`
-## Scroll down: `Control-n`
-## Page down: 
-## Page up: 
-## Go back:
-## Go Forward:
+## Shortcuts
+
+| Keyboard Command   | Description
+| --- | ---
+| Command + i  | Open links
+| Command + c | Copy
+| Command + v | Paste
+| Command + r | Reload 
+| Control + p | Scroll up
+| Control + n | Scroll down
+| Command + [ | Go back 
+| Command + ] | Go forward
 

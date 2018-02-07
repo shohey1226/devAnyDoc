@@ -15,8 +15,8 @@ weight: 20
 | Command + w | Close file
 | Command + n| Open new file
 
-There are tons of keybindings on Editor.
-The below is the list.
+There are tons of keybindings on Editor which derives from [Ace Editor](https://github.com/ajaxorg/ace).
+It can be set up but may not work some of them as iOS has already uses the keys. The below is the list.
 
 | Keyboard Command   | Description
 | --- | ---

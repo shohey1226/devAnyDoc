@@ -33,10 +33,13 @@ You can make Editor/Terminal/Browser fullscreen.
 
 Setting view is to set up for devAny.  This can be seen by making your device vertical(portrait).
 
-### Hostname
-### Port
-### Secured on/off
-### Font size
-### Browser resolution
-### Keyboard shortcuts
+
+| Field   | Description
+| --- | ---
+| Hostname | Server's hostname that devAny connents to.
+| Port | Server's port that devAny connects to.
+| Secured | off: http/ws, on: https/wss.
+| Font Size| The defualt font size. Depending on width, this may need to be adjusted.
+| Browser resolution | width of browser in full screen. The scale is adjusted if it's not full screen.
+| Keyboard shortcuts | If you want to change keybinding, you can set yours.
 

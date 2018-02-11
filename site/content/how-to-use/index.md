@@ -8,26 +8,16 @@ weight: 15
 ## Desktop 
 
 Desktop view has terminal, editor and browser. This can be seen by making your device horizontal(landscape).
-The below shortcuts is always available in Desktop.
 
-### Move Window : `Cmd+Tab`
+<video src="/movies/desktop.mp4" controls width="100%" autoplay></video>
 
-You can see green line on the edge. The window which has green line is the active window. 
-You can change the active window with this shortcut.
-(Also you can tap on device to make active)
-<video src="/movies/move_windows.mp4" controls width="100%"></video>
-
----
-
-### Full screen : `Cmd+Shift+?`
-
-You can make Editor/Terminal/Browser fullscreen.
-
-<video src="/movies/full_window.mp4" controls width="100%"></video>
+| Keyboard Command   | Description
+| --- | ---
+| Command + Tab  | Move window
+| Command + Tab + Shift | Move window - Reverse
+| Command + / | Full screen(back from Full screen)
 
 ---
-
-### Help : `Alt+1`
 
 ## Setting 
 

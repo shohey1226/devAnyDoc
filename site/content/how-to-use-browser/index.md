@@ -12,7 +12,7 @@ Browser is for browsing websites. You can operate with only your keyboard.
 
 | Keyboard Command   | Description
 | --- | ---
-| Command + i  | Open links
+| Command + i  | Show hints
 | Command + c | Copy
 | Command + v | Paste
 | Command + r | Reload 

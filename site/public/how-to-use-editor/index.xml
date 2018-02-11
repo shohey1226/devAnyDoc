@@ -18,7 +18,7 @@
       <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
       
       <guid>https://www.devany.net/how-to-use-editor/</guid>
-      <description>Save file: Cmd+s Change file: Control+Tab Close file: Cmd+w Copy: Cmd+c Paste: Cmd+v Other keybindings: There are tons of keybindings on Editor. The below is the list.</description>
+      <description>Shortcuts    Keyboard Command Description     Command + s Save file   Command + c Copy   Command + v Paste   Control + Tab Change file   Command + w Close file   Command + n Open new file    There are tons of keybindings on Editor which derives from Ace Editor. It can be set up but may not work some of them as iOS has already uses the keys.</description>
     </item>
     
   </channel>

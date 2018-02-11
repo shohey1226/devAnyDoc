@@ -18,9 +18,8 @@
       <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
       
       <guid>https://www.devany.net/how-to-use/</guid>
-      <description>Desktop Desktop view has terminal, editor and browser. This can be seen by making your device horizontal(landscape). The below shortcuts is always available in Desktop.
-Move Window : Cmd+Tab You can see green line on the edge. The window which has green line is the active window. You can change the active window with this shortcut. (Also you can tap on device to make active) 
-Full screen : Cmd+Shift+?</description>
+      <description>Desktop Desktop view has terminal, editor and browser. This can be seen by making your device horizontal(landscape).
+    Keyboard Command Description     Command + Tab Move window   Command + Tab + Shift Move window - Reverse   Command + / Full screen(back from Full screen)    Setting Setting view is to set up for devAny. This can be seen by making your device vertical(portrait).</description>
     </item>
     
   </channel>

@@ -32,7 +32,7 @@ $ sudo docker run -d -h devany \ -v /home/devany:/home/&amp;lt;USERNAME&amp;gt; 
       <guid>https://www.devany.net/how-to-use-terminal/</guid>
       <description>Terminal is a terminal session to connect to server. You can use screen/tmux to keep sessions in the background because when devAny app is inacitve(open the other app, for example), it cuts the sesesson.
 devany command devany command is available and this command opens file or link to Editor and Browser respectively.
-Open file with Editor from Terminal $ devany -f content/how-to-use/index.md  Open link with Browser from Terminal $ devany -l https://www.</description>
+ Open file with Editor from Terminal $ devany -f content/how-to-use/index.md  Open link with Browser from Terminal $ devany -l https://www.</description>
     </item>
     
     <item>
@@ -41,9 +41,8 @@ Open file with Editor from Terminal $ devany -f content/how-to-use/index.md  Ope
       <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
       
       <guid>https://www.devany.net/how-to-use/</guid>
-      <description>Desktop Desktop view has terminal, editor and browser. This can be seen by making your device horizontal(landscape). The below shortcuts is always available in Desktop.
-Move Window : Cmd+Tab You can see green line on the edge. The window which has green line is the active window. You can change the active window with this shortcut. (Also you can tap on device to make active) 
-Full screen : Cmd+Shift+?</description>
+      <description>Desktop Desktop view has terminal, editor and browser. This can be seen by making your device horizontal(landscape).
+    Keyboard Command Description     Command + Tab Move window   Command + Tab + Shift Move window - Reverse   Command + / Full screen(back from Full screen)    Setting Setting view is to set up for devAny. This can be seen by making your device vertical(portrait).</description>
     </item>
     
     <item>
@@ -52,7 +51,7 @@ Full screen : Cmd+Shift+?</description>
       <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
       
       <guid>https://www.devany.net/how-to-use-editor/</guid>
-      <description>Save file: Cmd+s Change file: Control+Tab Close file: Cmd+w Copy: Cmd+c Paste: Cmd+v Other keybindings: There are tons of keybindings on Editor. The below is the list.</description>
+      <description>Shortcuts    Keyboard Command Description     Command + s Save file   Command + c Copy   Command + v Paste   Control + Tab Change file   Command + w Close file   Command + n Open new file    There are tons of keybindings on Editor which derives from Ace Editor. It can be set up but may not work some of them as iOS has already uses the keys.</description>
     </item>
     
     <item>
@@ -82,7 +81,7 @@ If you choose to use our Service, then you agree to the collection and use of in
       <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
       
       <guid>https://www.devany.net/faq/</guid>
-      <description>My terminal is always blank and not responding? You need to set up your server. Please go through getting started.</description>
+      <description>Q. My terminal is always blank and not responding? A. You need to set up your server. Please go through getting started.</description>
     </item>
     
     <item>
@@ -92,8 +91,8 @@ If you choose to use our Service, then you agree to the collection and use of in
       
       <guid>https://www.devany.net/how-to-use-browser/</guid>
       <description> Browser is for browsing websites. You can operate with only your keyboard.
-Apple doesn&amp;rsquo;t allow us to go insecure website(http) and only allow secure(SSL/TSL) enabled websites. devAny tries to get insecure websites through server but it doesn&amp;rsquo;t work 100%.
-Shortcuts    Keyboard Command Description     Command + i Open links   Command + c Copy   Command + v Paste   Command + r Reload   Control + p Scroll up   Control + n Scroll down   Command + [ Go back   Command + ] Go forward    </description>
+ Apple doesn&amp;rsquo;t allow us to go insecure website(http) and only allow secure(SSL/TSL) enabled websites. devAny tries to get insecure websites through server but it doesn&amp;rsquo;t work 100%.
+How to copy  Find word with command+f Type words and enter to hightlight Type enter to go to the word Type &amp;ldquo;i&amp;rdquo; and use arrow keys + shift to select Command+c to Copy the woreds to clipboard Then you can paste with command+v on terminal, editor or browser   Shortcuts    Keyboard Command Description     Command + i Show hints   Command + c Copy   Command + v Paste   Command + r Reload   Control + p Scroll up   Control + n Scroll down   Command + [ Go back   Command + ] Go forward   Control + Tab Change tab   Command + w Close tab   Command + t Open new tab    </description>
     </item>
     
     <item>

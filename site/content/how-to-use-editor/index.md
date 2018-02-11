@@ -4,6 +4,8 @@ title: How to use editor
 weight: 20
 ---
 
+<video src="/movies/editor.mp4" controls width="100%" autoplay></video>
+
 ## Shortcuts
 
 | Keyboard Command   | Description

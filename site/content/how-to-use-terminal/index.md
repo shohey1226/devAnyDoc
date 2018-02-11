@@ -10,6 +10,8 @@ Terminal is a terminal session to connect to server. You can use [screen](https:
 
 `devany` command is available and this command opens file or link to Editor and Browser respectively.
 
+<video src="/movies/terminal_command.mp4" controls width="100%" autoplay></video>
+
 ### Open file with Editor from Terminal
 
 ```bash
@@ -27,6 +29,8 @@ Terminal is a terminal session to connect to server. You can use [screen](https:
 ---
 
 ## How to copy text
+
+<video src="/movies/terminal_copy.mp4" controls width="100%"></video>
 
 ## Shortcuts
 

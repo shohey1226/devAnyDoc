@@ -12,6 +12,13 @@ Browser is for browsing websites. You can operate with only your keyboard.
 
 ## How to copy 
 
+1. Find word with command+f
+2. Type words and enter to hightlight
+3. Type enter to go to the word
+4. Type "i" and use arrow keys + shift to select
+5. Command+c to Copy the woreds to clipboard
+6. Then you can paste with command+v on terminal, editor or browser
+
 <video src="/movies/browser_copy.mp4" controls width="100%"></video>
 
 ## Shortcuts

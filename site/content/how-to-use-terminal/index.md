@@ -30,6 +30,13 @@ Terminal is a terminal session to connect to server. You can use [screen](https:
 
 ## How to copy text
 
+1. Find word with command+f
+2. Type word and enter to hightlight
+3. Type "i" to go in Insert mode
+4. Use arrow keys to select the area
+5. Type enter to copy the words to clipboard
+6. Then, you can paste with command+v on Terminal, Edtior or Browser 
+
 <video src="/movies/terminal_copy.mp4" controls width="100%"></video>
 
 ## Shortcuts

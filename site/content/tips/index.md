@@ -6,14 +6,16 @@ weight: 10
 
 ## Open file easily
 
-Use [peco]().
+Use [peco](https://github.com/peco/peco).
 
 ```
 # in .bashrc or .bash_profile
 function pecodaf {
-  devany -f $(find . -type f -o -path .git -prune  | peco)
+  devany -f $(find . -type f -o -path ./.git -prune  | peco)
 }
 ```
+
+## Use deavny command from the history with peco
 
 ```
 function pecodah {

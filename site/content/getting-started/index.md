@@ -10,9 +10,13 @@ weight: 10
 
 *<span style="color: red">The connection of this setup is <b>NOT</b> encrypted. Secure connection is highly recommended. Please follow [secure connection](/getting-started/#secure-connection) after the below instruction is completed.</span>*
 
+Images that includes devAny server processes are provided so that user don't have to set up them. At this moment, there are three images that user can use. Please choose your preferable image. If you want to use other images, because I make them with [Packer](https://www.packer.io). please fork [devany-packer](https://github.com/shohey1226/devany-packer). Pull request is always welcome :)
 
-We provide docker(\*1) image so that all processes for devAny is up and runing.
-Please install docker by following [docker installation](https://docs.docker.com/engine/installation/)
+### Using Docker 
+
+Docker is well-known container and the easiest way to launch devAny process on server. One drawbacks is that only mounted volume is persistent after relaunch docker container. For example, if you install packages with apt-get to /user/local/bin, those are gone after restarting the container process. Therefore, installing all packages in your mounted volume with linuxbrew, rbenv, nvm or others are recommended. I put dockerfile in [devany-docker](https://github.com/shohey1226/devany-docker). Please feel free to fork and add your packages and build it by yourself.
+
+First of all, please install docker by following [docker installation](https://docs.docker.com/engine/installation/)
 
 After docker is installed, you just run the following command.
 
@@ -35,7 +39,25 @@ $ sudo docker run -d -h devany \
 
 *\*1. If you are not familiar with docker. Please go through [their documentation](https://docs.docker.com/).*
 
+### Using Amazon EC2 image or Google could image
 
+* AMI: 
+* Google image: 
+
+1. Start up instance with the image.
+2. Run the below.
+
+```
+$ sudo su
+# USERNAME=<USERNAME> PASSWORD=<PASSWORD> /run.sh
+```
+3. Make sure that the processes are runnging.
+
+```
+$ sudo supervisorctrl status
+apache                           RUNNING   pid 23, uptime 22 days, 12:38:14
+ttyd                             RUNNING   pid 24, uptime 22 days, 12:38:14
+```
 
 ## Setup on mobile
 

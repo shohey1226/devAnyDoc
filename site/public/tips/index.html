@@ -9,16 +9,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>How to use editor - devAny</title>
+    <title>How to use terminal - devAny</title>
     <meta name="generator" content="Hugo 0.34" />
 
     
-    <link rel="canonical" href="https://www.devany.net/how-to-use-editor/">
+    <link rel="canonical" href="https://www.devany.net/tips/">
     
     <meta name="author" content="shohey1226">
     
 
-    <meta property="og:url" content="https://www.devany.net/how-to-use-editor/">
+    <meta property="og:url" content="https://www.devany.net/tips/">
     <meta property="og:title" content="devAny">
     <meta property="og:image" content="https://www.devany.net/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="devAny">
@@ -224,14 +224,11 @@
 
 
 
-<a class="current" title="How to use editor" href="https://www.devany.net/how-to-use-editor/">
+<a  title="How to use editor" href="https://www.devany.net/how-to-use-editor/">
 	
 	How to use editor
 </a>
 
-
-<ul id="scrollspy">
-</ul>
 
 
   
@@ -358,620 +355,26 @@
 
 	<article class="article">
 		<div class="wrapper">
-			<h1>devAny - How to use editor </h1>
+			<h1>devAny - How to use terminal </h1>
 
 			
 
-<video src="https://www.devany.net/movies/editor.mp4" controls width="100%" autoplay></video>
+<h2 id="open-file-easily">Open file easily</h2>
 
-<h2 id="shortcuts">Shortcuts</h2>
+<p>Use <a href="https://github.com/peco/peco">peco</a>.</p>
 
-<table>
-<thead>
-<tr>
-<th>Keyboard Command</th>
-<th>Description</th>
-</tr>
-</thead>
+<pre><code># in .bashrc or .bash_profile
+function pecodaf {
+  devany -f $(find . -type f -o -path ./.git -prune  | peco)
+}
+</code></pre>
 
-<tbody>
-<tr>
-<td>Command + s</td>
-<td>Save file</td>
-</tr>
+<h2 id="use-deavny-command-from-the-history-with-peco">Use deavny command from the history with peco</h2>
 
-<tr>
-<td>Command + c</td>
-<td>Copy</td>
-</tr>
-
-<tr>
-<td>Command + v</td>
-<td>Paste</td>
-</tr>
-
-<tr>
-<td>Control + Tab</td>
-<td>Change file</td>
-</tr>
-
-<tr>
-<td>Command + w</td>
-<td>Close file</td>
-</tr>
-
-<tr>
-<td>Command + n</td>
-<td>Open new file</td>
-</tr>
-</tbody>
-</table>
-
-<p>There are tons of keybindings on Editor which derives from <a href="https://github.com/ajaxorg/ace">Ace Editor</a>.
-It can be set up but may not work some of them as iOS has already uses the keys. The below is the list.</p>
-
-<table>
-<thead>
-<tr>
-<th>Keyboard Command</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Command+,</td>
-<td>showSettingsMenu</td>
-</tr>
-
-<tr>
-<td>Alt+4</td>
-<td>goToNextError</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+4</td>
-<td>goToPreviousError</td>
-</tr>
-
-<tr>
-<td>Control+p</td>
-<td>selectall</td>
-</tr>
-
-<tr>
-<td>Alt+s</td>
-<td>centerselection</td>
-</tr>
-
-<tr>
-<td>Command+3</td>
-<td>fold</td>
-</tr>
-
-<tr>
-<td>Shift+Command+1</td>
-<td>unfold</td>
-</tr>
-
-<tr>
-<td>capslock+2</td>
-<td>toggleFoldWidget</td>
-</tr>
-
-<tr>
-<td>Alt+2</td>
-<td>toggleParentFoldWidget</td>
-</tr>
-
-<tr>
-<td>Alt+Control+Command+0</td>
-<td>foldall</td>
-</tr>
-
-<tr>
-<td>Alt+Command+0</td>
-<td>foldOther</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+Command+0</td>
-<td>unfoldall</td>
-</tr>
-
-<tr>
-<td>Alt+Control+s</td>
-<td>findnext</td>
-</tr>
-
-<tr>
-<td>Alt+Control+r</td>
-<td>findprevious</td>
-</tr>
-
-<tr>
-<td>Control+g</td>
-<td>selectOrFindNext</td>
-</tr>
-
-<tr>
-<td>Shift+Control+g</td>
-<td>selectOrFindPrevious</td>
-</tr>
-
-<tr>
-<td>Command+f</td>
-<td>find</td>
-</tr>
-
-<tr>
-<td>Control+i</td>
-<td>overwrite</td>
-</tr>
-
-<tr>
-<td>Shift+Control+0</td>
-<td>selecttostart</td>
-</tr>
-
-<tr>
-<td>Command+up</td>
-<td>gotostart</td>
-</tr>
-
-<tr>
-<td>Shift+Control+p</td>
-<td>selectup</td>
-</tr>
-
-<tr>
-<td>Control+p</td>
-<td>golineup</td>
-</tr>
-
-<tr>
-<td>Shift+Control+end</td>
-<td>selecttoend</td>
-</tr>
-
-<tr>
-<td>Command+down</td>
-<td>gotoend</td>
-</tr>
-
-<tr>
-<td>Shift+Control+n</td>
-<td>selectdown</td>
-</tr>
-
-<tr>
-<td>Control+n</td>
-<td>golinedown</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+b</td>
-<td>selectwordleft</td>
-</tr>
-
-<tr>
-<td>Alt+left</td>
-<td>gotowordleft</td>
-</tr>
-
-<tr>
-<td>Shift+Control+a</td>
-<td>selecttolinestart</td>
-</tr>
-
-<tr>
-<td>Control+a</td>
-<td>gotolinestart</td>
-</tr>
-
-<tr>
-<td>Shift+Control+b</td>
-<td>selectleft</td>
-</tr>
-
-<tr>
-<td>Control+b</td>
-<td>gotoleft</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+f</td>
-<td>selectwordright</td>
-</tr>
-
-<tr>
-<td>Alt+right</td>
-<td>gotowordright</td>
-</tr>
-
-<tr>
-<td>Shift+Control+e</td>
-<td>selecttolineend</td>
-</tr>
-
-<tr>
-<td>Control+e</td>
-<td>gotolineend</td>
-</tr>
-
-<tr>
-<td>Shift+Control+f</td>
-<td>selectright</td>
-</tr>
-
-<tr>
-<td>Control+f</td>
-<td>gotoright</td>
-</tr>
-
-<tr>
-<td>Shift+Control+down</td>
-<td>selectpagedown</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+down</td>
-<td>pagedown</td>
-</tr>
-
-<tr>
-<td>Control+v</td>
-<td>gotopagedown</td>
-</tr>
-
-<tr>
-<td>Shift+Control+up</td>
-<td>selectpageup</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+up</td>
-<td>pageup</td>
-</tr>
-
-<tr>
-<td>Alt+up</td>
-<td>gotopageup</td>
-</tr>
-
-<tr>
-<td>Shift+Command+0</td>
-<td>selectlinestart</td>
-</tr>
-
-<tr>
-<td>Alt+Command+e</td>
-<td>togglerecording</td>
-</tr>
-
-<tr>
-<td>Shift+Command+e</td>
-<td>replaymacro</td>
-</tr>
-
-<tr>
-<td>Shift+Control+m</td>
-<td>expandToMatching</td>
-</tr>
-
-<tr>
-<td>Command+d</td>
-<td>removeline</td>
-</tr>
-
-<tr>
-<td>Shift+Command+d</td>
-<td>duplicateSelection</td>
-</tr>
-
-<tr>
-<td>Alt+Command+s</td>
-<td>sortlines</td>
-</tr>
-
-<tr>
-<td>Alt+;</td>
-<td>togglecomment</td>
-</tr>
-
-<tr>
-<td>Shift+Command+/</td>
-<td>toggleBlockComment</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+up</td>
-<td>modifyNumberUp</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+down</td>
-<td>modifyNumberDown</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+5</td>
-<td>replace</td>
-</tr>
-
-<tr>
-<td>Control+z</td>
-<td>undo</td>
-</tr>
-
-<tr>
-<td>Shift+Control+z</td>
-<td>redo</td>
-</tr>
-
-<tr>
-<td>Alt+Command+up</td>
-<td>copylinesup</td>
-</tr>
-
-<tr>
-<td>Alt+up</td>
-<td>movelinesup</td>
-</tr>
-
-<tr>
-<td>Alt+Command+down</td>
-<td>copylinesdown</td>
-</tr>
-
-<tr>
-<td>Alt+down</td>
-<td>movelinesdown</td>
-</tr>
-
-<tr>
-<td>Control+d</td>
-<td>del</td>
-</tr>
-
-<tr>
-<td>+backspace</td>
-<td>backspace</td>
-</tr>
-
-<tr>
-<td>Command+backspace</td>
-<td>removetolinestart</td>
-</tr>
-
-<tr>
-<td>Control+k</td>
-<td>removetolineend</td>
-</tr>
-
-<tr>
-<td>Alt+Control+backspace</td>
-<td>removewordleft</td>
-</tr>
-
-<tr>
-<td>Alt+delete</td>
-<td>removewordright</td>
-</tr>
-
-<tr>
-<td>Shift+tab</td>
-<td>outdent</td>
-</tr>
-
-<tr>
-<td>+tab</td>
-<td>indent</td>
-</tr>
-
-<tr>
-<td>Control+[</td>
-<td>blockoutdent</td>
-</tr>
-
-<tr>
-<td>Control+]</td>
-<td>blockindent</td>
-</tr>
-
-<tr>
-<td>Control+o</td>
-<td>splitline</td>
-</tr>
-
-<tr>
-<td>Control+t</td>
-<td>transposeletters</td>
-</tr>
-
-<tr>
-<td>Alt+u</td>
-<td>touppercase</td>
-</tr>
-
-<tr>
-<td>Alt+l</td>
-<td>tolowercase</td>
-</tr>
-
-<tr>
-<td>Shift+Command+l</td>
-<td>expandtoline</td>
-</tr>
-
-<tr>
-<td>Alt+Control+up</td>
-<td>addCursorAbove</td>
-</tr>
-
-<tr>
-<td>Alt+Control+down</td>
-<td>addCursorBelow</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+Control+up</td>
-<td>addCursorAboveSkipCurrent</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+Control+down</td>
-<td>addCursorBelowSkipCurrent</td>
-</tr>
-
-<tr>
-<td>Alt+Control+left</td>
-<td>selectMoreBefore</td>
-</tr>
-
-<tr>
-<td>Alt+Control+right</td>
-<td>selectMoreAfter</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+Control+left</td>
-<td>selectNextBefore</td>
-</tr>
-
-<tr>
-<td>Shift+Alt+Control+right</td>
-<td>selectNextAfter</td>
-</tr>
-
-<tr>
-<td>Alt+Control+l</td>
-<td>splitIntoLines</td>
-</tr>
-
-<tr>
-<td>Alt+Control+a</td>
-<td>alignCursors</td>
-</tr>
-
-<tr>
-<td>Alt+Control+g</td>
-<td>findAll</td>
-</tr>
-
-<tr>
-<td>Alt+space</td>
-<td>startAutocomplete</td>
-</tr>
-
-<tr>
-<td>Command+o</td>
-<td>gotoline</td>
-</tr>
-
-<tr>
-<td>Alt+v</td>
-<td>goorselect</td>
-</tr>
-
-<tr>
-<td>Control+l</td>
-<td>recenterTopBottom</td>
-</tr>
-
-<tr>
-<td>Command+f</td>
-<td>iSearch</td>
-</tr>
-
-<tr>
-<td>Control+r</td>
-<td>iSearchBackwards</td>
-</tr>
-
-<tr>
-<td>Control+m</td>
-<td>insertstring</td>
-</tr>
-
-<tr>
-<td>Alt+delete</td>
-<td>killWord</td>
-</tr>
-
-<tr>
-<td>Control+k</td>
-<td>killLine</td>
-</tr>
-
-<tr>
-<td>Shift+delete</td>
-<td>yank</td>
-</tr>
-
-<tr>
-<td>Alt+y</td>
-<td>yankRotate</td>
-</tr>
-
-<tr>
-<td>Control+g</td>
-<td>keyboardQuit</td>
-</tr>
-
-<tr>
-<td>Shift+Control+w</td>
-<td>killRegion</td>
-</tr>
-
-<tr>
-<td>Alt+w</td>
-<td>killRingSave</td>
-</tr>
-
-<tr>
-<td>Control+space</td>
-<td>setMark</td>
-</tr>
-
-<tr>
-<td>Control+x</td>
-<td>exchangePointAndMark</td>
-</tr>
-
-<tr>
-<td>Alt+/</td>
-<td>autocomplete</td>
-</tr>
-
-<tr>
-<td>Control+u</td>
-<td>universalArgument</td>
-</tr>
-
-<tr>
-<td>Control+x r</td>
-<td>selectRectangularRegion</td>
-</tr>
-
-<tr>
-<td>Alt+x</td>
-<td>focusCommandLine</td>
-</tr>
-
-<tr>
-<td>Command+g</td>
-<td>iSearchAndGo</td>
-</tr>
-
-<tr>
-<td>Shift+Command+g</td>
-<td>iSearchBackwardsAndGo</td>
-</tr>
-</tbody>
-</table>
-
-<!-- Table here -->
+<pre><code>function pecodah {
+  $(history | grep devany | cut -c 8- | peco)
+}
+</code></pre>
 
 
 			<aside class="copyright" role="note">
@@ -986,7 +389,7 @@ It can be set up but may not work some of them as iOS has already uses the keys.
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://www.devany.net/how-to-use/" title="How to use devAny">
+      <a href="https://www.devany.net/how-to-use-terminal/" title="How to use terminal">
         <span class="direction">
           Previous
         </span>
@@ -996,7 +399,7 @@ It can be set up but may not work some of them as iOS has already uses the keys.
           </div>
           <div class="stretch">
             <div class="title">
-              How to use devAny
+              How to use terminal
             </div>
           </div>
         </div>
@@ -1006,14 +409,14 @@ It can be set up but may not work some of them as iOS has already uses the keys.
 
   <div class="next">
   
-      <a href="https://www.devany.net/browse/" title="web browsing">
+      <a href="https://www.devany.net/how-to-use/" title="How to use devAny">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              web browsing
+              How to use devAny
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">

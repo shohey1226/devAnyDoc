@@ -385,7 +385,7 @@ Because your iPhone/iPad is getting better and better, now it&rsquo;s possible w
 
 <ul>
 <li><strong>devAny app</strong> - [Only iOS available] Install app from <a href="https://itunes.apple.com/app/id1315254200">iTunes App Store</a>;</li>
-<li><strong>Server</strong> -  devAny doesn&rsquo;t provide Unix environment. You need to have a server for devaAny to connect. No worries, we have docker image so you can install instantly.</li>
+<li><strong>Server</strong> -  devAny doesn&rsquo;t provide Unix environment. You need to have a server for devaAny to connect. No worries, we have images so you can install instantly.</li>
 <li><strong>Bluetooth Keyboard</strong> -  The virtual keyboard is hard to type. Find your favorite keyboard.</li>
 <li><strong>The way to connect to monitor</strong> - physical cable or AirPlay</li>
 <li><strong>Domain</strong> -  This is not mandatory but TSL/SSL connection is highly recommended.</li>
@@ -495,6 +495,38 @@ Because your iPhone/iPad is getting better and better, now it&rsquo;s possible w
       }
     </script>
 
+    
+      <script>
+        (function(i,s,o,g,r,a,m){
+          i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||
+          []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
+          m.parentNode.insertBefore(a,m)
+        })(window, document,
+          'script', '//www.google-analytics.com/analytics.js', 'ga');
+         
+        ga('create', 'UA-118306653-1', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+         
+        var buttons = document.querySelectorAll('a');
+        Array.prototype.map.call(buttons, function(item) {
+          if (item.host != document.location.host) {
+            item.addEventListener('click', function() {
+              var action = item.getAttribute('data-action') || 'follow';
+              ga('send', 'event', 'outbound', action, item.href);
+            });
+          }
+        });
+         
+        var query = document.querySelector('.query');
+        query.addEventListener('blur', function() {
+          if (this.value) {
+            var path = document.location.pathname;
+            ga('send', 'pageview', path + '?q=' + this.value);
+          }
+        });
+      </script>
     
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>

@@ -7,7 +7,7 @@ metadataformat = "yaml"
 canonifyurls = true 
 #layout = "single"
 # Enable Google Analytics by entering your tracking id
-googleAnalytics = ""
+googleAnalytics = "UA-118306653-1"
 
 [params]
 	# General information

@@ -368,8 +368,13 @@
 
 <p><em><span style="color: red">The connection of this setup is <b>NOT</b> encrypted. Secure connection is highly recommended. Please follow <a href="https://www.devany.net/getting-started/#secure-connection">secure connection</a> after the below instruction is completed.</span></em></p>
 
-<p>We provide docker(*1) image so that all processes for devAny is up and runing.
-Please install docker by following <a href="https://docs.docker.com/engine/installation/">docker installation</a></p>
+<p>There are a couple of processes need to run on server to use devAny. In order to avoid this tedious setup, I provide images that includes all required processes and the way to create the image on your end using <a href="https://www.packer.io">Packer </a>.</p>
+
+<h3 id="1-using-docker">1. Using Docker</h3>
+
+<p>Docker is well-known container and the easiest way to launch devAny process on server. One drawbacks is that only mounted volume is persistent after relaunch docker container. For example, if you install packages with apt-get to /user/local/bin, those are gone after restarting the container process. Therefore, installing all packages in your mounted volume with linuxbrew, rbenv, nvm or others are recommended. I put dockerfile in <a href="https://github.com/shohey1226/devany-docker">devany-docker</a>. Please feel free to fork and add your packages and build it by yourself.</p>
+
+<p>Okay, moving on the how to. First of all, please install docker by following <a href="https://docs.docker.com/engine/installation/">docker installation</a></p>
 
 <p>After docker is installed, you just run the following command.</p>
 
@@ -388,6 +393,53 @@ Please install docker by following <a href="https://docs.docker.com/engine/insta
 </code></pre>
 
 <p><em>*1. If you are not familiar with docker. Please go through <a href="https://docs.docker.com/">their documentation</a>.</em></p>
+
+<h3 id="2-using-iaas">2. Using IaaS</h3>
+
+<p>Here I only explain AWS and Google Could but <a href="https://www.packer.io">Packer</a> has more capability to build images.
+Feel free to fork <a href="https://github.com/shohey1226/devany-packer">devany-packer</a> and create image. (PR is welcome by the way)</p>
+
+<h4 id="2-1-prepare-the-image">2-1 Prepare the image</h4>
+
+<p><strong>Amazon EC2 image(AMI)</strong></p>
+
+<p>There are public images so you can use. You can find these AMI ID in the region, and copy it if needed.</p>
+
+<ul>
+<li>ami-b2dc9ed4 (region: ap-northeast-1)</li>
+<li>ami-32f7fd52 (region: us-west-1)</li>
+</ul>
+
+<p><strong>Google Cloud image</strong></p>
+
+<p>I found it is difficult to share google images to others. I explain how to make the image on your end.
+Before running below command,</p>
+
+<ol>
+<li>Go to <a href="https://www.packer.io/downloads.html">Download Packer</a> and install Packer.</li>
+<li>Prepare account file with <a href="https://www.packer.io/docs/builders/googlecompute.html#running-without-a-compute-engine-service-account">Running Without a Compute Engine Service Account</a></li>
+<li>Find out which zone you want to buid on with <a href="https://cloud.google.com/compute/docs/regions-zones/regions-zones">Region and Zone</a></li>
+</ol>
+
+<pre><code class="language-text">$ git clone https://github.com/shohey1226/devany-packer.git
+$ cd devany-packer
+$ REGION=asia-northeast1-a GOOGLE_ACCOUNT_FILE=&lt;account file&gt; packer build -only=google devany.json  
+</code></pre>
+
+<h4 id="2-2-set-up-user">2-2 Set up user</h4>
+
+<p>Bring up the instance with image and login to the instance. Make sure the port 8888 is opened on the firewall.</p>
+
+<pre><code class="language-text">$ sudo su
+ROOT# USERNAME=&lt;USERNAME&gt; PASSWORD=&lt;PASSWORD&gt; /run.sh
+</code></pre>
+
+<p>Make sure that the processes are runnging.</p>
+
+<pre><code class="language-bash">$ sudo supervisorctrl status
+apache                           RUNNING   pid 23, uptime 22 days, 12:38:14
+ttyd                             RUNNING   pid 24, uptime 22 days, 12:38:14
+</code></pre>
 
 <h2 id="setup-on-mobile">Setup on mobile</h2>
 
@@ -694,6 +746,38 @@ $ crontab -e
       }
     </script>
 
+    
+      <script>
+        (function(i,s,o,g,r,a,m){
+          i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||
+          []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
+          m.parentNode.insertBefore(a,m)
+        })(window, document,
+          'script', '//www.google-analytics.com/analytics.js', 'ga');
+         
+        ga('create', 'UA-118306653-1', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+         
+        var buttons = document.querySelectorAll('a');
+        Array.prototype.map.call(buttons, function(item) {
+          if (item.host != document.location.host) {
+            item.addEventListener('click', function() {
+              var action = item.getAttribute('data-action') || 'follow';
+              ga('send', 'event', 'outbound', action, item.href);
+            });
+          }
+        });
+         
+        var query = document.querySelector('.query');
+        query.addEventListener('blur', function() {
+          if (this.value) {
+            var path = document.location.pathname;
+            ga('send', 'pageview', path + '?q=' + this.value);
+          }
+        });
+      </script>
     
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>

@@ -19,9 +19,8 @@
       
       <guid>https://www.devany.net/getting-started/</guid>
       <description>Installation on Server The connection of this setup is NOT encrypted. Secure connection is highly recommended. Please follow secure connection after the below instruction is completed.
-We provide docker(*1) image so that all processes for devAny is up and runing. Please install docker by following docker installation
-After docker is installed, you just run the following command.
-$ sudo docker run -d -h devany \ -v /home/devany:/home/&amp;lt;USERNAME&amp;gt; -e HOME=/home/&amp;lt;USERNAME&amp;gt; -e USERNAME=&amp;lt;USERNAME&amp;gt; -e PASSWORD=&amp;lt;YOUR PASSWORD&amp;gt; \ -p 8888:8888 -p 3000:5000 shohey1226/devany:latest  Please set your &amp;lt;USERNAME&amp;gt; and &amp;lt;YOUR PASSWORD&amp;gt;.</description>
+There are a couple of processes need to run on server to use devAny. In order to avoid this tedious setup, I provide images that includes all required processes and the way to create the image on your end using Packer .
+1. Using Docker Docker is well-known container and the easiest way to launch devAny process on server.</description>
     </item>
     
   </channel>

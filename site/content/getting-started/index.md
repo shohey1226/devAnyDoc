@@ -10,13 +10,14 @@ weight: 10
 
 *<span style="color: red">The connection of this setup is <b>NOT</b> encrypted. Secure connection is highly recommended. Please follow [secure connection](/getting-started/#secure-connection) after the below instruction is completed.</span>*
 
-Images that includes devAny server processes are provided so that user don't have to set up them. At this moment, there are three images that user can use. Please choose your preferable image. If you want to use other images, because I make them with [Packer](https://www.packer.io). please fork [devany-packer](https://github.com/shohey1226/devany-packer). Pull request is always welcome :)
+There are a couple of processes need to run on server to use devAny. In order to avoid this tedious setup, I provide images that includes all required processes and the way to create the image on your end using [Packer ](https://www.packer.io).
 
-### Using Docker 
+
+### 1. Using Docker
 
 Docker is well-known container and the easiest way to launch devAny process on server. One drawbacks is that only mounted volume is persistent after relaunch docker container. For example, if you install packages with apt-get to /user/local/bin, those are gone after restarting the container process. Therefore, installing all packages in your mounted volume with linuxbrew, rbenv, nvm or others are recommended. I put dockerfile in [devany-docker](https://github.com/shohey1226/devany-docker). Please feel free to fork and add your packages and build it by yourself.
 
-First of all, please install docker by following [docker installation](https://docs.docker.com/engine/installation/)
+Okay, moving on the how to. First of all, please install docker by following [docker installation](https://docs.docker.com/engine/installation/)
 
 After docker is installed, you just run the following command.
 
@@ -39,25 +40,51 @@ $ sudo docker run -d -h devany \
 
 *\*1. If you are not familiar with docker. Please go through [their documentation](https://docs.docker.com/).*
 
-### Using Amazon EC2 image or Google could image
+### 2. Using IaaS
 
-* AMI: 
-* Google image: 
+Here I only explain AWS and Google Could but [Packer](https://www.packer.io) has more capability to build images.
+Feel free to fork [devany-packer](https://github.com/shohey1226/devany-packer) and create image. (PR is welcome by the way)
 
-1. Start up instance with the image.
-2. Run the below.
+#### 2-1 Prepare the image
 
+**Amazon EC2 image(AMI)**
+
+There are public images so you can use. You can find these AMI ID in the region, and copy it if needed.
+
+* ami-b2dc9ed4 (region: ap-northeast-1)
+* ami-32f7fd52 (region: us-west-1)
+
+**Google Cloud image**
+
+I found it is difficult to share google images to others. I explain how to make the image on your end.
+Before running below command, 
+
+1. Go to [Download Packer](https://www.packer.io/downloads.html) and install Packer.
+2. Prepare account file with [Running Without a Compute Engine Service Account](https://www.packer.io/docs/builders/googlecompute.html#running-without-a-compute-engine-service-account) 
+3. Find out which zone you want to buid on with [Region and Zone](https://cloud.google.com/compute/docs/regions-zones/regions-zones)
+
+```text
+$ git clone https://github.com/shohey1226/devany-packer.git
+$ cd devany-packer
+$ REGION=asia-northeast1-a GOOGLE_ACCOUNT_FILE=<account file> packer build -only=google devany.json  
 ```
+
+#### 2-2 Set up user
+
+Bring up the instance with image and login to the instance. Make sure the port 8888 is opened on the firewall.
+
+```text
 $ sudo su
-# USERNAME=<USERNAME> PASSWORD=<PASSWORD> /run.sh
+ROOT# USERNAME=<USERNAME> PASSWORD=<PASSWORD> /run.sh
 ```
-3. Make sure that the processes are runnging.
+Make sure that the processes are runnging.
 
-```
+```bash
 $ sudo supervisorctrl status
 apache                           RUNNING   pid 23, uptime 22 days, 12:38:14
 ttyd                             RUNNING   pid 24, uptime 22 days, 12:38:14
 ```
+
 
 ## Setup on mobile
 

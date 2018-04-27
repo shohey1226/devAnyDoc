@@ -19,9 +19,8 @@
       
       <guid>https://www.devany.net/getting-started/</guid>
       <description>Installation on Server The connection of this setup is NOT encrypted. Secure connection is highly recommended. Please follow secure connection after the below instruction is completed.
-We provide docker(*1) image so that all processes for devAny is up and runing. Please install docker by following docker installation
-After docker is installed, you just run the following command.
-$ sudo docker run -d -h devany \ -v /home/devany:/home/&amp;lt;USERNAME&amp;gt; -e HOME=/home/&amp;lt;USERNAME&amp;gt; -e USERNAME=&amp;lt;USERNAME&amp;gt; -e PASSWORD=&amp;lt;YOUR PASSWORD&amp;gt; \ -p 8888:8888 -p 3000:5000 shohey1226/devany:latest  Please set your &amp;lt;USERNAME&amp;gt; and &amp;lt;YOUR PASSWORD&amp;gt;.</description>
+There are a couple of processes need to run on server to use devAny. In order to avoid this tedious setup, I provide images that includes all required processes and the way to create the image on your end using Packer .
+1. Using Docker Docker is well-known container and the easiest way to launch devAny process on server.</description>
     </item>
     
     <item>
@@ -33,6 +32,16 @@ $ sudo docker run -d -h devany \ -v /home/devany:/home/&amp;lt;USERNAME&amp;gt; 
       <description>Terminal is a terminal session to connect to server. You can use screen/tmux to keep sessions in the background because when devAny app is inacitve(open the other app, for example), it cuts the sesesson.
 devany command devany command is available and this command opens file or link to Editor and Browser respectively.
  Open file with Editor from Terminal $ devany -f content/how-to-use/index.md  Open link with Browser from Terminal $ devany -l https://www.</description>
+    </item>
+    
+    <item>
+      <title>How to use terminal</title>
+      <link>https://www.devany.net/tips/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://www.devany.net/tips/</guid>
+      <description> Open file easily Use peco.
+# in .bashrc or .bash_profile function pecodaf { devany -f $(find . -type f -o -path ./.git -prune | peco) }  Use deavny command from the history with peco function pecodah { $(history | grep devany | cut -c 8- | peco) }  </description>
     </item>
     
     <item>

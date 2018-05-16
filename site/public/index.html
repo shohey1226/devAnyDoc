@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>devAny - Coding with editor, terminal and browser on iPhone/iPad</title>
+    <title>devAny - A thin client to write codes on iPhone/iPad</title>
     <meta name="generator" content="Hugo 0.34" />
 
     
@@ -105,7 +105,7 @@
     </div>
 
     <div class="button" style="padding:4px">
-      <a href="https://itunes.apple.com/app/id1315254200" style="border-bottom: none;display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
+      <a href="https://itunes.apple.com/app/id1315254200" style="border-bottom: none;display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;" onClick="gtag('event', 'appstore', { event_category: 'header' });"></a>
     </div>
 
     
@@ -127,6 +127,7 @@
     </div>
   </div>
 </nav>
+
 </header>
 
 <main class="main">
@@ -362,11 +363,18 @@
 	<article class="article">
 		<div class="wrapper">
 			
-				<h1>devAny - Coding with editor, terminal and browser on iPhone/iPad </h1>
+				<h1>devAny - A thin client to write codes on iPhone/iPad </h1>
 
 				
 
-<p><img src="https://www.devany.net/images/devAny_top_image.jpg" alt="Material Screenshot" /></p>
+<p><img src="https://www.devany.net/images/top.jpg" alt="Screenshot" /></p>
+
+<p><center></p>
+
+<h3 id="demo">Demo</h3>
+
+<p><img src="https://www.devany.net/movies/usage.gif" alt="Usage" />
+</center></p>
 
 <h2 id="what-is-devany">What is devAny?</h2>
 
@@ -384,7 +392,7 @@ Because your iPhone/iPad is getting better and better, now it&rsquo;s possible w
 <h2 id="prerequisites">Prerequisites</h2>
 
 <ul>
-<li><strong>devAny app</strong> - [Only iOS available] Install app from <a href="https://itunes.apple.com/app/id1315254200">iTunes App Store</a>;</li>
+<li><strong>devAny app</strong> - [Only iOS available] Install app from <a href="//itunes.apple.com/app/id1315254200" onClick="gtag('event', 'appstore', { event_category: 'linkInContent' });">iTunes App Store</a></li>
 <li><strong>Server</strong> -  devAny doesn&rsquo;t provide Unix environment. You need to have a server for devaAny to connect. No worries, we have images so you can install instantly.</li>
 <li><strong>Bluetooth Keyboard</strong> -  The virtual keyboard is hard to type. Find your favorite keyboard.</li>
 <li><strong>The way to connect to monitor</strong> - physical cable or AirPlay</li>
@@ -496,37 +504,16 @@ Because your iPhone/iPad is getting better and better, now it&rsquo;s possible w
     </script>
 
     
-      <script>
-        (function(i,s,o,g,r,a,m){
-          i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||
-          []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
-          m.parentNode.insertBefore(a,m)
-        })(window, document,
-          'script', '//www.google-analytics.com/analytics.js', 'ga');
-         
-        ga('create', 'UA-118306653-1', 'auto');
-        ga('set', 'anonymizeIp', true);
-        ga('send', 'pageview');
-         
-        var buttons = document.querySelectorAll('a');
-        Array.prototype.map.call(buttons, function(item) {
-          if (item.host != document.location.host) {
-            item.addEventListener('click', function() {
-              var action = item.getAttribute('data-action') || 'follow';
-              ga('send', 'event', 'outbound', action, item.href);
-            });
-          }
-        });
-         
-        var query = document.querySelector('.query');
-        query.addEventListener('blur', function() {
-          if (this.value) {
-            var path = document.location.pathname;
-            ga('send', 'pageview', path + '?q=' + this.value);
-          }
-        });
-      </script>
+
+     
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118306653-1"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-118306653-1');
+     </script>
+
     
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>

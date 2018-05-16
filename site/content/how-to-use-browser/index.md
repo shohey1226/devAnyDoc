@@ -36,4 +36,6 @@ Browser is for browsing websites. You can operate with only your keyboard.
 | Control + Tab | Change tab
 | Command + w | Close tab
 | Command + t | Open new tab
+| Command + + | Zoom In
+| Command + _ | Zoom out 
 

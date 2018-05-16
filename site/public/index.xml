@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>devAny - Coding with editor, terminal and browser on iPhone/iPad on devAny</title>
+    <title>devAny - A thin client to write codes on iPhone/iPad on devAny</title>
     <link>https://www.devany.net/</link>
-    <description>Recent content in devAny - Coding with editor, terminal and browser on iPhone/iPad on devAny</description>
+    <description>Recent content in devAny - A thin client to write codes on iPhone/iPad on devAny</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>@shohey1226</copyright>
@@ -101,7 +101,7 @@ If you choose to use our Service, then you agree to the collection and use of in
       <guid>https://www.devany.net/how-to-use-browser/</guid>
       <description> Browser is for browsing websites. You can operate with only your keyboard.
  Apple doesn&amp;rsquo;t allow us to go insecure website(http) and only allow secure(SSL/TSL) enabled websites. devAny tries to get insecure websites through server but it doesn&amp;rsquo;t work 100%.
-How to copy  Find word with command+f Type words and enter to hightlight Type enter to go to the word Type &amp;ldquo;i&amp;rdquo; and use arrow keys + shift to select Command+c to Copy the woreds to clipboard Then you can paste with command+v on terminal, editor or browser   Shortcuts    Keyboard Command Description     Command + i Show hints   Command + c Copy   Command + v Paste   Command + r Reload   Control + p Scroll up   Control + n Scroll down   Command + [ Go back   Command + ] Go forward   Control + Tab Change tab   Command + w Close tab   Command + t Open new tab    </description>
+How to copy  Find word with command+f Type words and enter to hightlight Type enter to go to the word Type &amp;ldquo;i&amp;rdquo; and use arrow keys + shift to select Command+c to Copy the woreds to clipboard Then you can paste with command+v on terminal, editor or browser   Shortcuts    Keyboard Command Description     Command + i Show hints   Command + c Copy   Command + v Paste   Command + r Reload   Control + p Scroll up   Control + n Scroll down   Command + [ Go back   Command + ] Go forward   Control + Tab Change tab   Command + w Close tab   Command + t Open new tab   Command + + Zoom In   Command + _ Zoom out    </description>
     </item>
     
     <item>

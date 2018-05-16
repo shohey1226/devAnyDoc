@@ -20,7 +20,7 @@
       <guid>https://www.devany.net/how-to-use-browser/</guid>
       <description> Browser is for browsing websites. You can operate with only your keyboard.
  Apple doesn&amp;rsquo;t allow us to go insecure website(http) and only allow secure(SSL/TSL) enabled websites. devAny tries to get insecure websites through server but it doesn&amp;rsquo;t work 100%.
-How to copy  Find word with command+f Type words and enter to hightlight Type enter to go to the word Type &amp;ldquo;i&amp;rdquo; and use arrow keys + shift to select Command+c to Copy the woreds to clipboard Then you can paste with command+v on terminal, editor or browser   Shortcuts    Keyboard Command Description     Command + i Show hints   Command + c Copy   Command + v Paste   Command + r Reload   Control + p Scroll up   Control + n Scroll down   Command + [ Go back   Command + ] Go forward   Control + Tab Change tab   Command + w Close tab   Command + t Open new tab    </description>
+How to copy  Find word with command+f Type words and enter to hightlight Type enter to go to the word Type &amp;ldquo;i&amp;rdquo; and use arrow keys + shift to select Command+c to Copy the woreds to clipboard Then you can paste with command+v on terminal, editor or browser   Shortcuts    Keyboard Command Description     Command + i Show hints   Command + c Copy   Command + v Paste   Command + r Reload   Control + p Scroll up   Control + n Scroll down   Command + [ Go back   Command + ] Go forward   Control + Tab Change tab   Command + w Close tab   Command + t Open new tab   Command + + Zoom In   Command + _ Zoom out    </description>
     </item>
     
   </channel>

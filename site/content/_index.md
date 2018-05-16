@@ -1,11 +1,16 @@
 ---
 date: 2016-03-08T21:07:13+01:00
-title: devAny - Coding with editor, terminal and browser on iPhone/iPad
+title: devAny - A thin client to write codes on iPhone/iPad
 type: index
 weight: 1
 ---
 
-![Material Screenshot](/images/devAny_top_image.jpg)
+![Screenshot](/images/top.jpg)
+
+<center>
+### Demo
+![Usage](/movies/usage.gif)
+</center>
 
 ## What is devAny?
 
@@ -20,7 +25,7 @@ devAny has thefollowing feature.
 
 ## Prerequisites
 
-* **devAny app** - [Only iOS available] Install app from [iTunes App Store](https://itunes.apple.com/app/id1315254200);
+* **devAny app** - [Only iOS available] Install app from <a href="//itunes.apple.com/app/id1315254200" onClick="gtag('event', 'appstore', { event_category: 'linkInContent' });">iTunes App Store</a>
 * **Server** -  devAny doesn't provide Unix environment. You need to have a server for devaAny to connect. No worries, we have images so you can install instantly.
 * **Bluetooth Keyboard** -  The virtual keyboard is hard to type. Find your favorite keyboard.
 * **The way to connect to monitor** - physical cable or AirPlay

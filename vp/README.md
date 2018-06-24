@@ -27,7 +27,14 @@ footer: © 2018 @shohey1226
 * **The way to connect to monitor** - physical cable or AirPlay
 
 <style>
-.home .hero img {
-  max-height: 350px;
+@media (max-width: 419px) {
+  .home .hero img {
+    max-width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .home .hero img {
+    max-width: 250px;
+  }
 }
 </style>

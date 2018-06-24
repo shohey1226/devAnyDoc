@@ -11,7 +11,6 @@ module.exports = {
       '/how-to-use-editor/',
       '/how-to-use-browser/',
       '/how-to-use-terminal/',
-      '/browse/',
       '/faq/',
       '/tips/',
       '/license/',
@@ -20,7 +19,7 @@ module.exports = {
     ],
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Get started', link: '/getting-started/' },
+      { text: 'Getting started', link: '/getting-started/' },
       { text: 'Download(App Store)', link: 'http://itunes.apple.com/app/id1315254200' },
    ],
   }
